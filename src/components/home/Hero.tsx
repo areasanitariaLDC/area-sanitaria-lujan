@@ -65,14 +65,12 @@ export default function Hero() {
               <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
           </Link>
-          <a 
-            href="https://www.google.com/maps/d/viewer?mid=1tFDDOe8sAZwnwMJhdnLG7XO1zH_xO_8" 
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            href="#mapa" 
             className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white border-2 border-white/80 hover:bg-white/20 backdrop-blur-sm rounded-full transition-colors shadow-lg"
           >
             Ver mapa
-          </a>
+          </Link>
         </div>
         
         <div className="mt-12 flex items-center justify-center gap-4 text-sm text-white/80 font-medium drop-shadow-md">
