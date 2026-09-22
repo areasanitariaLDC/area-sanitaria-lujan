@@ -4,10 +4,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          {/* Logo Placeholder */}
-          <Link href="/" className="font-bold text-xl tracking-tight text-slate-900">
-            Área Sanitaria <span className="text-blue-600">Luján de Cuyo</span>
+        <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
+            <img src="/mapa-lujan.png" alt="Mapa Luján de Cuyo" className="h-10 w-auto object-contain drop-shadow-md" />
+            <span className="font-bold text-xl tracking-tight text-slate-900 hidden sm:block">
+              Área Sanitaria <span className="text-blue-600">Luján de Cuyo</span>
+            </span>
           </Link>
         </div>
         
