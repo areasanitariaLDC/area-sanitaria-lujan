@@ -1,3 +1,5 @@
+import centros from '@/data/centros.json';
+
 export default function Centers() {
   return (
     <section id="centros" className="py-20 bg-white">
@@ -10,31 +12,48 @@ export default function Centers() {
             Encontrá tu centro de salud
           </h2>
           <p className="text-lg text-slate-600">
-            Buscá por nombre o localidad. Después abrí el centro para consultar su agenda semanal completa.
+            Buscá por nombre o localidad. Contamos con {centros.length} establecimientos en el departamento.
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-          {/* Placeholder for Centers */}
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="border border-slate-200 rounded-2xl p-6 hover:border-blue-300 transition-colors bg-slate-50/50">
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="font-semibold text-lg text-slate-900">
-                  Centro de Salud N.° {30 + i}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+          {centros.map((centro, i) => (
+            <div key={i} className="border border-slate-200 rounded-2xl p-6 hover:border-blue-300 hover:shadow-md transition-all bg-slate-50/50 flex flex-col h-full">
+              <div className="flex justify-between items-start mb-4 gap-2">
+                <h3 className="font-bold text-lg text-slate-900 leading-tight">
+                  {centro.name}
                 </h3>
-                <span className="inline-flex items-center rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-medium text-blue-700">
-                  Urbano
+                <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold shrink-0 ${
+                  centro.type === 'Hospital' 
+                    ? 'bg-purple-100 text-purple-800' 
+                    : centro.type === 'Posta Sanitaria' 
+                    ? 'bg-emerald-100 text-emerald-800' 
+                    : 'bg-blue-100 text-blue-800'
+                }`}>
+                  {centro.type}
                 </span>
               </div>
-              <p className="text-slate-600 text-sm mb-4">
-                Calle Ejemplo 123, Distrito, Luján de Cuyo
-              </p>
-              <button className="text-blue-600 font-medium text-sm flex items-center hover:text-blue-700">
-                Ver agenda
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                </svg>
-              </button>
+              
+              {centro.description && (
+                <p className="text-slate-600 text-sm mb-4 line-clamp-2">
+                  {centro.description}
+                </p>
+              )}
+              
+              <div className="mt-auto pt-4 flex gap-3 border-t border-slate-200">
+                <a 
+                  href={`https://www.google.com/maps/search/?api=1&query=${centro.lat},${centro.lng}`} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-slate-600 hover:text-blue-600 font-medium text-sm flex items-center transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  Ver en mapa
+                </a>
+              </div>
             </div>
           ))}
         </div>

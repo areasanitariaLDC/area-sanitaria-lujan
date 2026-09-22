@@ -1,0 +1,275 @@
+[
+  {
+    "name": "Centro de Salud N°224 \"Costa Flores\" Perdriel Oeste",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.0703722,
+    "lng": -68.925056
+  },
+  {
+    "name": "Centro de Salud N° 218 \"Los Alerces\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.9657062,
+    "lng": -68.8324998
+  },
+  {
+    "name": "Centro de Salud N° 217 \"Los Olivos\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.9621427,
+    "lng": -68.843044
+  },
+  {
+    "name": "Centro de Salud Nº 202 Perdriel",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.0753812,
+    "lng": -68.887573
+  },
+  {
+    "name": "Centro de Salud N° 39 \"Ugarteche\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.2090956,
+    "lng": -68.8836293
+  },
+  {
+    "name": "Centro de Salud Nº 38 \"Carlos Levy\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.9851546,
+    "lng": -68.8806105
+  },
+  {
+    "name": "Centro de Salud N°37 \"Carrizal de Abajo\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.324263,
+    "lng": -68.7564294
+  },
+  {
+    "name": "Centro de Salud N°35 \"Agrelo\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.128213,
+    "lng": -68.890298
+  },
+  {
+    "name": "Centro de Salud N° 34 \"Potrerillos\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.9561958,
+    "lng": -69.1960754
+  },
+  {
+    "name": "Centro de Salud N°33 \"La Colonia\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.1363345,
+    "lng": -68.9191024
+  },
+  {
+    "name": "Centro de Salud Nº 31 \"David Busana\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.0382276,
+    "lng": -68.8882553
+  },
+  {
+    "name": "Centro de Salud N° 003 \"Pablo Casale\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.968734,
+    "lng": -68.8474255
+  },
+  {
+    "name": "Centro de Salud N° 32 Las Compuertas",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.0355677,
+    "lng": -68.968385
+  },
+  {
+    "name": "Centro de Salud N° 36 Carrizal del Medio",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.2553408,
+    "lng": -68.8008402
+  },
+  {
+    "name": "Posta Sanitaria Alto Agrelo",
+    "type": "Posta Sanitaria",
+    "description": "Posta Sanitaria",
+    "lat": -33.0956244,
+    "lng": -68.967924
+  },
+  {
+    "name": "Posta N° 525 Bella Vista",
+    "type": "Posta Sanitaria",
+    "description": "Posta Sanitaria",
+    "lat": -33.0586494,
+    "lng": -68.929207
+  },
+  {
+    "name": "Posta N° 520 Las Vegas",
+    "type": "Posta Sanitaria",
+    "description": "",
+    "lat": -33.0151964,
+    "lng": -69.2726282
+  },
+  {
+    "name": "Posta N° 521 Cacheuta",
+    "type": "Posta Sanitaria",
+    "description": "",
+    "lat": -33.0158388,
+    "lng": -69.1175553
+  },
+  {
+    "name": "Posta N° 523 Novero",
+    "type": "Posta Sanitaria",
+    "description": "",
+    "lat": -33.2369393,
+    "lng": -68.9160146
+  },
+  {
+    "name": "Posta N° 546 Costa Esperanza",
+    "type": "Posta Sanitaria",
+    "description": "",
+    "lat": -33.1862128,
+    "lng": -68.9424682
+  },
+  {
+    "name": "Posta N° 567 El Tropezón",
+    "type": "Posta Sanitaria",
+    "description": "",
+    "lat": -33.3070957,
+    "lng": -68.8617647
+  },
+  {
+    "name": "Hospital Lagomaggiore",
+    "type": "Hospital",
+    "description": "Alta Complejidad",
+    "lat": -32.8719632,
+    "lng": -68.863865
+  },
+  {
+    "name": "Hospital Fleming",
+    "type": "Hospital",
+    "description": "Hospital Pediátrico del Empleado Público",
+    "lat": -32.8935849,
+    "lng": -68.8466993
+  },
+  {
+    "name": "Hospital Central",
+    "type": "Hospital",
+    "description": "Alta Complejidad",
+    "lat": -32.8921513,
+    "lng": -68.832884
+  },
+  {
+    "name": "Hospital Lencinas",
+    "type": "Hospital",
+    "description": "Hospital de Infectología y RedLab",
+    "lat": -32.9027921,
+    "lng": -68.8707014
+  },
+  {
+    "name": "Hospital Notti",
+    "type": "Hospital",
+    "description": "Alta Complejidad",
+    "lat": -32.8974464,
+    "lng": -68.8042753
+  },
+  {
+    "name": "Hospital El Sauce",
+    "type": "Hospital",
+    "description": "Monovalente Correspondiente",
+    "lat": -32.8630914,
+    "lng": -68.7448971
+  },
+  {
+    "name": "Hospital Paroissien",
+    "type": "Hospital",
+    "description": "Mediana Complejidad",
+    "lat": -32.9812974,
+    "lng": -68.7830704
+  },
+  {
+    "name": "Hospital El Carmen",
+    "type": "Hospital",
+    "description": "Empleados Públicos y Maternidad",
+    "lat": -32.9273762,
+    "lng": -68.858986
+  },
+  {
+    "name": "Sendero Cerro Cocodrilo, RP89, Potrerillos, Mendoza, Argentina",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.9556986,
+    "lng": -69.1973836
+  },
+  {
+    "name": "Posta N° 521 Cacheuta",
+    "type": "Posta Sanitaria",
+    "description": "",
+    "lat": -33.0158455,
+    "lng": -69.1175068
+  },
+  {
+    "name": "Hospital Paroissien",
+    "type": "Hospital",
+    "description": "",
+    "lat": -32.9812436,
+    "lng": -68.7833699
+  },
+  {
+    "name": "Centro de Salud N° 34 \"Potrerillos\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.9561465,
+    "lng": -69.1959229
+  },
+  {
+    "name": "Centro de Salud Nº 31 \"David Busana\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.0382824,
+    "lng": -68.8880462
+  },
+  {
+    "name": "Hospital Paroissien",
+    "type": "Hospital",
+    "description": "",
+    "lat": -32.9812436,
+    "lng": -68.7833699
+  },
+  {
+    "name": "Centro de Salud N° 39 \"Ugarteche\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.2090088,
+    "lng": -68.8835892
+  },
+  {
+    "name": "Hospital Paroissien",
+    "type": "Hospital",
+    "description": "",
+    "lat": -32.9812436,
+    "lng": -68.7833699
+  },
+  {
+    "name": "Los Condores 353, Potrerillos, Mendoza, Argentina",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.95749,
+    "lng": -69.199558
+  },
+  {
+    "name": "Hospital Paroissien",
+    "type": "Hospital",
+    "description": "",
+    "lat": -32.9812436,
+    "lng": -68.7833699
+  }
+]
