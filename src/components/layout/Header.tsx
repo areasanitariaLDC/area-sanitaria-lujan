@@ -1,6 +1,23 @@
+"use client";
+
 import Link from "next/link";
+import { useState, useRef, useEffect } from "react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -13,20 +30,52 @@ export default function Header() {
           </Link>
         </div>
         
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-          <Link href="#mapa" className="hover:text-blue-600 transition-colors">Mapa</Link>
-          <Link href="#centros" className="hover:text-blue-600 transition-colors">Centros de Salud</Link>
-          <Link href="#comunidad" className="hover:text-blue-600 transition-colors">Comunidad</Link>
-          <Link href="#equipos" className="hover:text-blue-600 transition-colors">Equipos de Salud</Link>
-        </nav>
-
-        <div className="flex md:hidden">
-          {/* Mobile Menu Button Placeholder */}
-          <button className="text-slate-600 p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        {/* Dropdown Menu Container */}
+        <div className="relative" ref={menuRef}>
+          {/* Hamburger Button */}
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-blue-900 p-2 hover:bg-slate-100 rounded-md transition-colors focus:outline-none"
+            aria-label="Menú"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
           </button>
+
+          {/* Dropdown Content */}
+          {isMenuOpen && (
+            <div className="absolute right-0 mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-2 flex flex-col z-50 animate-in fade-in slide-in-from-top-2">
+              <Link 
+                href="#mapa" 
+                onClick={() => setIsMenuOpen(false)}
+                className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+              >
+                Mapa
+              </Link>
+              <Link 
+                href="#centros" 
+                onClick={() => setIsMenuOpen(false)}
+                className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+              >
+                Centros de Salud
+              </Link>
+              <Link 
+                href="#comunidad" 
+                onClick={() => setIsMenuOpen(false)}
+                className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+              >
+                Comunidad
+              </Link>
+              <Link 
+                href="#equipos" 
+                onClick={() => setIsMenuOpen(false)}
+                className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+              >
+                Equipos de Salud
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </header>
