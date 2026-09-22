@@ -7,7 +7,8 @@ const backgrounds = [
   "/backgrounds/bg1.jpg",
   "/backgrounds/bg2.webp",
   "/backgrounds/bg3.jpg",
-  "/backgrounds/bg4.webp"
+  "/backgrounds/bg4.webp",
+  "/backgrounds/bg5.png"
 ];
 
 export default function Hero() {
