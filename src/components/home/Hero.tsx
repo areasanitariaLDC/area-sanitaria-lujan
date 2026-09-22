@@ -28,7 +28,7 @@ export default function Hero() {
       {backgrounds.map((bg, index) => (
         <div
           key={bg}
-          className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 w-full h-full transition-opacity duration-[3000ms] ease-in-out ${
             index === currentBg ? "opacity-100 z-0" : "opacity-0 -z-10"
           }`}
         >
