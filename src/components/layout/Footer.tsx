@@ -15,7 +15,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Enlaces rápidos</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#mapa" className="hover:text-white transition-colors">Mapa de centros</Link></li>
+              <li><a href="https://www.google.com/maps/d/viewer?mid=1tFDDOe8sAZwnwMJhdnLG7XO1zH_xO_8" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Mapa de centros</a></li>
               <li><Link href="#centros" className="hover:text-white transition-colors">Lista de Centros de Salud</Link></li>
               <li><Link href="#contacto" className="hover:text-white transition-colors">Contacto y Emergencias</Link></li>
             </ul>
