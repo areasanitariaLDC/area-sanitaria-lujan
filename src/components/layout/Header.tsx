@@ -46,34 +46,34 @@ export default function Header() {
           {/* Dropdown Content */}
           {isMenuOpen && (
             <div className="absolute right-0 mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-2 flex flex-col z-50 animate-in fade-in slide-in-from-top-2">
-              <Link 
+              <a 
                 href="#mapa" 
                 onClick={() => setIsMenuOpen(false)}
                 className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
               >
                 Mapa
-              </Link>
-              <Link 
+              </a>
+              <a 
                 href="#centros" 
                 onClick={() => setIsMenuOpen(false)}
                 className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
               >
                 Centros de Salud
-              </Link>
-              <Link 
+              </a>
+              <a 
                 href="#comunidad" 
                 onClick={() => setIsMenuOpen(false)}
                 className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
               >
                 Comunidad
-              </Link>
-              <Link 
+              </a>
+              <a 
                 href="#equipos" 
                 onClick={() => setIsMenuOpen(false)}
                 className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
               >
                 Equipos de Salud
-              </Link>
+              </a>
             </div>
           )}
         </div>

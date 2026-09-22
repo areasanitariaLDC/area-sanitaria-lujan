@@ -56,7 +56,7 @@ export default function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">
-          <Link 
+          <a 
             href="#centros" 
             className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-blue-900 bg-white hover:bg-slate-100 rounded-full transition-colors shadow-lg"
           >
@@ -64,13 +64,13 @@ export default function Hero() {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-          </Link>
-          <Link 
+          </a>
+          <a 
             href="#mapa" 
             className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white border-2 border-white/80 hover:bg-white/20 backdrop-blur-sm rounded-full transition-colors shadow-lg"
           >
             Ver mapa
-          </Link>
+          </a>
         </div>
         
         <div className="mt-12 flex items-center justify-center gap-4 text-sm text-white/80 font-medium drop-shadow-md">
