@@ -4,272 +4,311 @@
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.0703722,
-    "lng": -68.925056
+    "lng": -68.925056,
+    "address": "Barrio Perdriel IV, Costa Flores"
   },
   {
     "name": "Centro de Salud N° 218 \"Los Alerces\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -32.9657062,
-    "lng": -68.8324998
+    "lng": -68.8324998,
+    "address": "Isla de los Estados, Distrito Carrodilla"
   },
   {
     "name": "Centro de Salud N° 217 \"Los Olivos\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -32.9621427,
-    "lng": -68.843044
+    "lng": -68.843044,
+    "address": "Manuel Antonio Sáez, Distrito Carrodilla"
   },
   {
     "name": "Centro de Salud Nº 202 Perdriel",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.0753812,
-    "lng": -68.887573
+    "lng": -68.887573,
+    "address": "Ascención Herrera de Grigor, Distrito Perdriel"
   },
   {
     "name": "Centro de Salud N° 39 \"Ugarteche\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.2090956,
-    "lng": -68.8836293
+    "lng": -68.8836293,
+    "address": "Distrito Ugarteche, Departamento Luján de Cuyo"
   },
   {
     "name": "Centro de Salud Nº 38 \"Carlos Levy\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -32.9851546,
-    "lng": -68.8806105
+    "lng": -68.8806105,
+    "address": "Italia, Distrito Chacras de Coria"
   },
   {
     "name": "Centro de Salud N°37 \"Carrizal de Abajo\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.324263,
-    "lng": -68.7564294
+    "lng": -68.7564294,
+    "address": "RP16, Distrito El Carrizal"
   },
   {
     "name": "Centro de Salud N°35 \"Agrelo\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.128213,
-    "lng": -68.890298
+    "lng": -68.890298,
+    "address": "Barrio Tierras Vivas, Jardín Agrelo"
   },
   {
     "name": "Centro de Salud N° 34 \"Potrerillos\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -32.9561958,
-    "lng": -69.1960754
+    "lng": -69.1960754,
+    "address": "Distrito Potrerillos, Departamento Luján de Cuyo"
   },
   {
     "name": "Centro de Salud N°33 \"La Colonia\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.1363345,
-    "lng": -68.9191024
+    "lng": -68.9191024,
+    "address": "Colonia 9 De Julio, Distrito Agrelo"
   },
   {
     "name": "Centro de Salud Nº 31 \"David Busana\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.0382276,
-    "lng": -68.8882553
+    "lng": -68.8882553,
+    "address": "Republica del Líbano 601, Distrito Ciudad de Luján de Cuyo"
   },
   {
     "name": "Centro de Salud N° 003 \"Pablo Casale\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -32.968734,
-    "lng": -68.8474255
+    "lng": -68.8474255,
+    "address": "Ingeniero Krause, Distrito Carrodilla"
   },
   {
     "name": "Centro de Salud N° 32 Las Compuertas",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.0355677,
-    "lng": -68.968385
+    "lng": -68.968385,
+    "address": "José Hernández, Distrito Las Compuertas"
   },
   {
     "name": "Centro de Salud N° 36 Carrizal del Medio",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.2553408,
-    "lng": -68.8008402
+    "lng": -68.8008402,
+    "address": "RP16, Distrito El Carrizal"
   },
   {
     "name": "Posta Sanitaria Alto Agrelo",
     "type": "Posta Sanitaria",
     "description": "Posta Sanitaria",
     "lat": -33.0956244,
-    "lng": -68.967924
+    "lng": -68.967924,
+    "address": "Distrito Agrelo, Departamento Luján de Cuyo"
   },
   {
     "name": "Posta N° 525 Bella Vista",
     "type": "Posta Sanitaria",
     "description": "Posta Sanitaria",
     "lat": -33.0586494,
-    "lng": -68.929207
+    "lng": -68.929207,
+    "address": "Costa Flores, Distrito Perdriel"
   },
   {
     "name": "Posta N° 520 Las Vegas",
     "type": "Posta Sanitaria",
     "description": "",
     "lat": -33.0151964,
-    "lng": -69.2726282
+    "lng": -69.2726282,
+    "address": "Ruta Provincial 89, Las Vegas"
   },
   {
     "name": "Posta N° 521 Cacheuta",
     "type": "Posta Sanitaria",
     "description": "",
     "lat": -33.0158388,
-    "lng": -69.1175553
+    "lng": -69.1175553,
+    "address": "Ruta Provincial 82, Distrito Cacheuta"
   },
   {
     "name": "Posta N° 523 Novero",
     "type": "Posta Sanitaria",
     "description": "",
     "lat": -33.2369393,
-    "lng": -68.9160146
+    "lng": -68.9160146,
+    "address": "Calle 2, Distrito Ugarteche"
   },
   {
     "name": "Posta N° 546 Costa Esperanza",
     "type": "Posta Sanitaria",
     "description": "",
     "lat": -33.1862128,
-    "lng": -68.9424682
+    "lng": -68.9424682,
+    "address": "Distrito Agrelo, Departamento Luján de Cuyo"
   },
   {
     "name": "Posta N° 567 El Tropezón",
     "type": "Posta Sanitaria",
     "description": "",
     "lat": -33.3070957,
-    "lng": -68.8617647
+    "lng": -68.8617647,
+    "address": "Distrito El Carrizal, Departamento Luján de Cuyo"
   },
   {
     "name": "Hospital Lagomaggiore",
     "type": "Hospital",
     "description": "Alta Complejidad",
     "lat": -32.8719632,
-    "lng": -68.863865
+    "lng": -68.863865,
+    "address": "Timoteo Gordillo, Ciudad de Mendoza"
   },
   {
     "name": "Hospital Fleming",
     "type": "Hospital",
     "description": "Hospital Pediátrico del Empleado Público",
     "lat": -32.8935849,
-    "lng": -68.8466993
+    "lng": -68.8466993,
+    "address": "Avenida Colón 485, Ciudad de Mendoza"
   },
   {
     "name": "Hospital Central",
     "type": "Hospital",
     "description": "Alta Complejidad",
     "lat": -32.8921513,
-    "lng": -68.832884
+    "lng": -68.832884,
+    "address": "Leandro Nicéforo Alem 500, Ciudad de Mendoza"
   },
   {
     "name": "Hospital Lencinas",
     "type": "Hospital",
     "description": "Hospital de Infectología y RedLab",
     "lat": -32.9027921,
-    "lng": -68.8707014
+    "lng": -68.8707014,
+    "address": "Talcahuano 2194"
   },
   {
     "name": "Hospital Notti",
     "type": "Hospital",
     "description": "Alta Complejidad",
     "lat": -32.8974464,
-    "lng": -68.8042753
+    "lng": -68.8042753,
+    "address": "Bandera de los Andes 2603, Nueva Ciudad"
   },
   {
     "name": "Hospital El Sauce",
     "type": "Hospital",
     "description": "Monovalente Correspondiente",
     "lat": -32.8630914,
-    "lng": -68.7448971
+    "lng": -68.7448971,
+    "address": "La Florida, Distrito El Sauce"
   },
   {
     "name": "Hospital Paroissien",
     "type": "Hospital",
     "description": "Mediana Complejidad",
     "lat": -32.9812974,
-    "lng": -68.7830704
+    "lng": -68.7830704,
+    "address": "Godoy Cruz 551, Distrito Ciudad de Maipú"
   },
   {
     "name": "Hospital El Carmen",
     "type": "Hospital",
     "description": "Empleados Públicos y Maternidad",
     "lat": -32.9273762,
-    "lng": -68.858986
+    "lng": -68.858986,
+    "address": "Joaquín Víctor González 245"
   },
   {
     "name": "Sendero Cerro Cocodrilo, RP89, Potrerillos, Mendoza, Argentina",
     "type": "Centro de Salud",
     "description": "",
     "lat": -32.9556986,
-    "lng": -69.1973836
+    "lng": -69.1973836,
+    "address": "Ex RN7, Distrito Potrerillos"
   },
   {
     "name": "Posta N° 521 Cacheuta",
     "type": "Posta Sanitaria",
     "description": "",
     "lat": -33.0158455,
-    "lng": -69.1175068
+    "lng": -69.1175068,
+    "address": "Ruta Provincial 82, Distrito Cacheuta"
   },
   {
     "name": "Hospital Paroissien",
     "type": "Hospital",
     "description": "",
     "lat": -32.9812436,
-    "lng": -68.7833699
+    "lng": -68.7833699,
+    "address": "Godoy Cruz 495, Distrito Ciudad de Maipú"
   },
   {
     "name": "Centro de Salud N° 34 \"Potrerillos\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -32.9561465,
-    "lng": -69.1959229
+    "lng": -69.1959229,
+    "address": "Distrito Potrerillos, Departamento Luján de Cuyo"
   },
   {
     "name": "Centro de Salud Nº 31 \"David Busana\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.0382824,
-    "lng": -68.8880462
+    "lng": -68.8880462,
+    "address": "Federico Serpa 115, Distrito Ciudad de Luján de Cuyo"
   },
   {
     "name": "Hospital Paroissien",
     "type": "Hospital",
     "description": "",
     "lat": -32.9812436,
-    "lng": -68.7833699
+    "lng": -68.7833699,
+    "address": "Godoy Cruz 495, Distrito Ciudad de Maipú"
   },
   {
     "name": "Centro de Salud N° 39 \"Ugarteche\"",
     "type": "Centro de Salud",
     "description": "",
     "lat": -33.2090088,
-    "lng": -68.8835892
+    "lng": -68.8835892,
+    "address": "Distrito Ugarteche, Departamento Luján de Cuyo"
   },
   {
     "name": "Hospital Paroissien",
     "type": "Hospital",
     "description": "",
     "lat": -32.9812436,
-    "lng": -68.7833699
+    "lng": -68.7833699,
+    "address": "Godoy Cruz 495, Distrito Ciudad de Maipú"
   },
   {
     "name": "Los Condores 353, Potrerillos, Mendoza, Argentina",
     "type": "Centro de Salud",
     "description": "",
     "lat": -32.95749,
-    "lng": -69.199558
+    "lng": -69.199558,
+    "address": "Avenida Los Cóndores, Distrito Potrerillos"
   },
   {
     "name": "Hospital Paroissien",
     "type": "Hospital",
     "description": "",
     "lat": -32.9812436,
-    "lng": -68.7833699
+    "lng": -68.7833699,
+    "address": "Godoy Cruz 495, Distrito Ciudad de Maipú"
   }
 ]

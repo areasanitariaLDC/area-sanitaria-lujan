@@ -35,10 +35,18 @@ export default function Centers() {
               </div>
               
               {centro.description && (
-                <p className="text-slate-600 text-sm mb-4 line-clamp-2">
+                <p className="text-slate-600 text-sm mb-2 line-clamp-2">
                   {centro.description}
                 </p>
               )}
+
+              <div className="flex items-start gap-2 mb-4 text-sm text-slate-600 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>{centro.address || "Dirección no disponible"}</span>
+              </div>
               
               <div className="mt-auto pt-4 flex gap-3 border-t border-slate-200">
                 <a 

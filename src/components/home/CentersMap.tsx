@@ -71,9 +71,10 @@ export default function CentersMap() {
             {centros.map((centro, idx) => (
               <Marker key={idx} position={[centro.lat, centro.lng]}>
                 <Popup>
-                  <div className="p-1">
+                  <div className="p-1 max-w-[200px]">
                     <h3 className="font-bold text-sm mb-1">{centro.name}</h3>
-                    <p className="text-xs text-slate-600 mb-2">{centro.type}</p>
+                    <p className="text-xs text-slate-600 mb-1">{centro.type}</p>
+                    <p className="text-xs text-slate-500 mb-3 line-clamp-2">{centro.address || "Dirección no disponible"}</p>
                     <a 
                       href={`https://www.google.com/maps/search/?api=1&query=${centro.lat},${centro.lng}`}
                       target="_blank"
