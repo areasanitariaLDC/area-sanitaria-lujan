@@ -1,7 +1,6 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/home/Hero";
-import CentersMap from "@/components/home/CentersMap";
-import Centers from "@/components/home/Centers";
+import CentersSection from "@/components/home/CentersSection";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -10,8 +9,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <CentersMap />
-        <Centers />
+        <CentersSection />
       </main>
       <Footer />
     </div>
