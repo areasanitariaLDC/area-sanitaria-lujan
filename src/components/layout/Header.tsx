@@ -20,11 +20,12 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-3">
-            <img src="/mapa-lujan.png" alt="Mapa Luján de Cuyo" className="h-10 w-auto object-contain drop-shadow-md" />
-            <span className="font-bold text-xl tracking-tight text-mendoza-blue-dark hidden sm:block">
+      <div className="container mx-auto px-4 py-3 min-h-[5rem] flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <Link href="/" className="flex items-center gap-4">
+            <img src="/mapa-lujan.png" alt="Mapa Luján de Cuyo" className="h-12 w-auto object-contain drop-shadow-md hidden md:block" />
+            <img src="/logo-mendoza-asldc.png" alt="Logo Gobierno de Mendoza" className="h-20 w-auto object-contain drop-shadow-sm" />
+            <span className="font-bold text-xl lg:text-2xl tracking-tight text-mendoza-blue-dark hidden sm:block">
               Área Sanitaria Luján de Cuyo
             </span>
           </Link>
