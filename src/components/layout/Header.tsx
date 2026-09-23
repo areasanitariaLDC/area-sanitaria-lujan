@@ -19,13 +19,13 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-3">
             <img src="/mapa-lujan.png" alt="Mapa Luján de Cuyo" className="h-10 w-auto object-contain drop-shadow-md" />
-            <span className="font-bold text-xl tracking-tight text-slate-900 hidden sm:block">
-              Área Sanitaria <span className="text-blue-600">Luján de Cuyo</span>
+            <span className="font-bold text-xl tracking-tight text-mendoza-blue-dark hidden sm:block">
+              Área Sanitaria Luján de Cuyo
             </span>
           </Link>
         </div>
@@ -35,7 +35,7 @@ export default function Header() {
           {/* Hamburger Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-blue-900 p-2 hover:bg-slate-100 rounded-md transition-colors focus:outline-none"
+            className="text-mendoza-blue-dark p-2 hover:bg-slate-100 rounded-md transition-colors focus:outline-none"
             aria-label="Menú"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
@@ -49,28 +49,28 @@ export default function Header() {
               <a 
                 href="#mapa" 
                 onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
               >
                 Mapa
               </a>
               <a 
                 href="#centros" 
                 onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
               >
                 Centros de Salud
               </a>
               <a 
                 href="#comunidad" 
                 onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
               >
                 Comunidad
               </a>
               <a 
                 href="#equipos" 
                 onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
               >
                 Equipos de Salud
               </a>

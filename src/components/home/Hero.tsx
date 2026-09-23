@@ -44,21 +44,20 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 z-10" aria-hidden="true" />
       
       <div className="container relative z-20 mx-auto px-4 flex flex-col items-center text-center">
-        <p className="text-sm md:text-base font-semibold text-white/90 uppercase tracking-wider mb-4 drop-shadow-md">
-          Área Sanitaria Luján de Cuyo
+        <p className="text-sm md:text-base font-bold text-mendoza-gold uppercase tracking-wider mb-4 drop-shadow-md">
+          Gobierno de Mendoza
         </p>
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 max-w-4xl drop-shadow-lg">
-          Salud cerca, <br className="hidden md:block" />
-          estés donde estés.
+          Área Sanitaria Luján de Cuyo
         </h1>
         <p className="text-lg md:text-xl text-white/90 max-w-2xl mb-10 drop-shadow-md">
-          Encontrá centros de salud, especialidades y horarios de atención en todo el departamento de Luján de Cuyo.
+          Encontrá centros de salud, especialidades y horarios de atención en todo el departamento. Salud cerca, estés donde estés.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4">
           <a 
             href="#centros" 
-            className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-blue-900 bg-white hover:bg-slate-100 rounded-full transition-colors shadow-lg"
+            className="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white bg-mendoza-blue-dark hover:bg-mendoza-blue-light rounded-full transition-colors shadow-lg"
           >
             Encontrar un centro
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
@@ -67,7 +66,7 @@ export default function Hero() {
           </a>
           <a 
             href="#mapa" 
-            className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white border-2 border-white/80 hover:bg-white/20 backdrop-blur-sm rounded-full transition-colors shadow-lg"
+            className="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white border-2 border-white/80 hover:bg-white/20 backdrop-blur-sm rounded-full transition-colors shadow-lg"
           >
             Ver mapa
           </a>

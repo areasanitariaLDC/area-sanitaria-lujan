@@ -12,10 +12,10 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
     <section id="centros" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-2">
+          <p className="text-sm font-bold text-mendoza-gold uppercase tracking-wider mb-2">
             Red territorial de atención
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-mendoza-blue-dark mb-4">
             Encontrá tu centro de salud
           </h2>
           <p className="text-lg text-slate-600">
@@ -52,7 +52,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
                       ? 'bg-purple-100 text-purple-800' 
                       : centro.type === 'Posta Sanitaria' 
                       ? 'bg-emerald-100 text-emerald-800' 
-                      : 'bg-blue-100 text-blue-800'
+                      : 'bg-mendoza-blue-light/10 text-mendoza-blue-dark'
                   }`}>
                     {centro.type}
                   </span>
