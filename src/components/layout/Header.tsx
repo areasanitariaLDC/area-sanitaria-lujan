@@ -31,52 +31,56 @@ export default function Header() {
           </Link>
         </div>
         
-        {/* Dropdown Menu Container */}
-        <div className="relative" ref={menuRef}>
-          {/* Hamburger Button */}
-          <button 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-mendoza-blue-dark p-2 hover:bg-slate-100 rounded-md transition-colors focus:outline-none"
-            aria-label="Menú"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
+        <div className="flex items-center gap-6">
+          <img src="/logo-mendoza-horizontal.png" alt="Mendoza Gobierno" className="h-12 w-auto object-contain hidden sm:block" />
+          
+          {/* Dropdown Menu Container */}
+          <div className="relative" ref={menuRef}>
+            {/* Hamburger Button */}
+            <button 
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-mendoza-blue-dark p-2 hover:bg-slate-100 rounded-md transition-colors focus:outline-none"
+              aria-label="Menú"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
 
-          {/* Dropdown Content */}
-          {isMenuOpen && (
-            <div className="absolute right-0 mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-2 flex flex-col z-50 animate-in fade-in slide-in-from-top-2">
-              <a 
-                href="#mapa" 
-                onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
-              >
-                Mapa
-              </a>
-              <a 
-                href="#centros" 
-                onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
-              >
-                Centros de Salud
-              </a>
-              <a 
-                href="#comunidad" 
-                onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
-              >
-                Comunidad
-              </a>
-              <a 
-                href="#equipos" 
-                onClick={() => setIsMenuOpen(false)}
-                className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
-              >
-                Equipos de Salud
-              </a>
-            </div>
-          )}
+            {/* Dropdown Content */}
+            {isMenuOpen && (
+              <div className="absolute right-0 mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-2 flex flex-col z-50 animate-in fade-in slide-in-from-top-2">
+                <a 
+                  href="#mapa" 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
+                >
+                  Mapa
+                </a>
+                <a 
+                  href="#centros" 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
+                >
+                  Centros de Salud
+                </a>
+                <a 
+                  href="#comunidad" 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
+                >
+                  Comunidad
+                </a>
+                <a 
+                  href="#equipos" 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
+                >
+                  Equipos de Salud
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </header>
