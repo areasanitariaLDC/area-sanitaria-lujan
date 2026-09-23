@@ -61,7 +61,7 @@ export default function CentersMap() {
           <MapContainer 
             center={centerPosition} 
             zoom={11} 
-            scrollWheelZoom={false}
+            scrollWheelZoom={true}
             className="w-full h-full z-0"
           >
             <TileLayer
