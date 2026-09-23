@@ -44,12 +44,15 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 z-10" aria-hidden="true" />
       
       <div className="container relative z-20 mx-auto px-4 flex flex-col items-center text-center">
-        <p className="text-sm md:text-base font-bold text-mendoza-gold uppercase tracking-wider mb-4 drop-shadow-md">
+        <p className="text-sm md:text-base font-bold text-mendoza-gold uppercase tracking-wider mb-2 drop-shadow-md">
           Gobierno de Mendoza
         </p>
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 max-w-4xl drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-2 max-w-4xl drop-shadow-lg">
           Área Sanitaria Luján de Cuyo
         </h1>
+        <p className="text-sm md:text-base font-bold text-mendoza-gold uppercase tracking-wider mb-8 drop-shadow-md">
+          Ministerio de Salud y Deportes
+        </p>
         <p className="text-lg md:text-xl text-white/90 max-w-2xl mb-10 drop-shadow-md">
           Encontrá centros de salud, especialidades y horarios de atención en todo el departamento. Salud cerca, estés donde estés.
         </p>
