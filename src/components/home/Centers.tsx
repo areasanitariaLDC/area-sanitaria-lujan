@@ -86,7 +86,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
             Red territorial de atención
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-mendoza-blue-dark mb-4">
-            Encontrá tu Hospital Provincial, Centro de Salud y Postas Sanitarias del Departamento de Luján de Cuyo
+            Aquí podes encontrar los principales Hospitales de la Provincia y Buscar también Centros de Salud y Postas Sanitarias del Departamento de Luján de Cuyo
           </h2>
           <p className="text-lg text-slate-600">
             Buscá por nombre o localidad. Contamos con {centros.length} establecimientos en el departamento.
