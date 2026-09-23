@@ -81,7 +81,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
   return (
     <section id="centros" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-7xl mx-auto text-center mb-16 px-4">
           <p className="text-sm font-bold text-mendoza-gold uppercase tracking-wider mb-2">
             Red territorial de atención
           </p>
