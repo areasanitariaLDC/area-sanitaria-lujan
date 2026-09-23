@@ -32,7 +32,7 @@ export default function Header() {
         </div>
         
         <div className="flex items-center gap-6">
-          <img src="/logo-mendoza-horizontal.png" alt="Mendoza Gobierno" className="h-12 w-auto object-contain hidden sm:block" />
+          <img src="/logo-mendoza-horizontal.png" alt="Mendoza Gobierno" className="h-24 w-auto object-contain hidden sm:block drop-shadow-sm" />
           
           {/* Dropdown Menu Container */}
           <div className="relative" ref={menuRef}>
