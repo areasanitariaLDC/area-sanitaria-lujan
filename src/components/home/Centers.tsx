@@ -95,7 +95,25 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
           <span className="line-clamp-1">{centro.address || "Dirección no disponible"}</span>
         </div>
 
-        <div className="mt-auto pt-4 flex gap-3 border-t border-slate-100 justify-between items-center">
+        
+          {centro.lat && centro.lng && (
+            <div className="mb-4">
+              <a 
+                href={`https://www.google.com/maps/dir/?api=1&destination=${centro.lat},${centro.lng}&travelmode=transit`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-mendoza-blue-light hover:text-mendoza-blue-dark transition-colors bg-mendoza-blue-light/10 hover:bg-mendoza-blue-light/20 px-3 py-1.5 rounded-full"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+                Cómo llegar
+              </a>
+            </div>
+          )}
+
+<div className="mt-auto pt-4 flex gap-3 border-t border-slate-100 justify-between items-center">
           <span 
             className={`font-bold text-sm flex items-center transition-colors ${
               isSelected ? 'text-red-600' : 'text-slate-500 group-hover:text-mendoza-blue-dark'
@@ -216,16 +234,31 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
             </div>
             
             <div className="p-6">
-              <div className="mb-6">
-                <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Dirección</h4>
-                <div className="flex items-start gap-2 text-slate-800 text-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-mendoza-blue-light flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <span>{modalCentro.address}, Mendoza</span>
+              <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div>
+                    <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Dirección</h4>
+                    <div className="flex items-start gap-2 text-slate-800 text-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-mendoza-blue-light flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span>{modalCentro.address}, Mendoza</span>
+                    </div>
+                  </div>
+                  {modalCentro.lat && modalCentro.lng && (
+                    <a 
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${modalCentro.lat},${modalCentro.lng}&travelmode=transit`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 bg-mendoza-blue-light hover:bg-mendoza-blue-dark text-white font-bold px-4 py-2.5 rounded-xl transition-colors shadow-sm shrink-0"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                      </svg>
+                      Cómo llegar (Colectivos)
+                    </a>
+                  )}
                 </div>
-              </div>
 
               <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
