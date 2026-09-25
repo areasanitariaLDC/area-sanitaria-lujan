@@ -259,10 +259,42 @@ export default function ComunidadPage() {
                   </div>
                 </div>
 
-                {/* Info HPV Section */}
                 
-              </div>
-            </details>
+                  {/* Campaña EFE */}
+                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border-t-4 border-t-red-600 border-l border-r border-b border-slate-200 mb-2">
+                    <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-6 flex items-center justify-between">
+                      Notificación Caso Sospechoso Sarampión o Enfermedad Febril Exantemática (EFE)
+                      <span className="text-red-600 border border-red-200 rounded-full p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+                        </svg>
+                      </span>
+                    </h3>
+                    
+                    <h4 className="font-bold text-slate-800 mb-2 uppercase text-sm md:text-base">Guía Simplificada de Actuación:</h4>
+                    <p className="font-bold text-red-600 mb-4 flex items-center gap-2">
+                      <span>🚨</span> Definición de Caso Sospechoso <span>🚨</span>
+                    </p>
+                    
+                    <p className="text-slate-800 mb-6 text-base md:text-lg">
+                      Todo paciente que presente <strong>fiebre y exantema</strong>, independientemente de la edad y de sus antecedentes de vacunación o viaje, <strong>debe ser estudiado.</strong>
+                    </p>
+                    
+                    <ul className="list-disc pl-6 space-y-2 text-mendoza-blue-light font-medium">
+                      <li>
+                        <a href="https://media.mendoza.gob.ar/informacion-oficial/uploads/sites/15/2026/07/GUIA-SIMPLIFICADA-DE-ACTUACION-EFE-Julio-2026.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-2">
+                          Circuito de Actuación (4 Pasos)
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="hover:underline flex items-center gap-2">
+                          Descargar Ficha Epidemiológica
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
           </div>
         </div>
       </section>
