@@ -1,44 +1,64 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
-const backgrounds = [
-  "/backgrounds/bg1.jpg",
-  "/backgrounds/bg2.webp",
-  "/backgrounds/bg3.jpg",
-  "/backgrounds/bg4.webp",
-  "/backgrounds/bg5.png"
+const videos = [
+  "/Video1.mp4",
+  "/Video3.mp4"
 ];
 
 export default function Hero() {
-  const [currentBg, setCurrentBg] = useState(0);
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const videoRef1 = useRef<HTMLVideoElement>(null);
+  const videoRef2 = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBg((prev) => (prev + 1) % backgrounds.length);
-    }, 10000); // 10 seconds
-
-    return () => clearInterval(interval);
+    // Autoplay the first video when component mounts
+    if (videoRef1.current) {
+      videoRef1.current.play().catch(e => console.log("Autoplay prevented:", e));
+    }
   }, []);
+
+  const handleVideoEnded = () => {
+    const nextVideo = (currentVideo + 1) % videos.length;
+    setCurrentVideo(nextVideo);
+    
+    if (nextVideo === 0 && videoRef1.current) {
+      videoRef1.current.currentTime = 0;
+      videoRef1.current.play().catch(e => console.log(e));
+    } else if (nextVideo === 1 && videoRef2.current) {
+      videoRef2.current.currentTime = 0;
+      videoRef2.current.play().catch(e => console.log(e));
+    }
+  };
 
   return (
     <section className="relative w-full min-h-[calc(100vh-64px)] flex items-center justify-center overflow-hidden">
-      {/* Background Images Slider */}
-      {backgrounds.map((bg, index) => (
-        <div
-          key={bg}
-          className={`absolute inset-0 w-full h-full transition-opacity duration-[3000ms] ease-in-out ${
-            index === currentBg ? "opacity-100 z-0" : "opacity-0 -z-10"
-          }`}
-        >
-          <img
-            src={bg}
-            alt="Fondo Luján de Cuyo"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ))}
+      {/* Background Videos Slider */}
+      <div className="absolute inset-0 w-full h-full bg-slate-900 -z-20"></div>
+      
+      <video
+        ref={videoRef1}
+        src={videos[0]}
+        autoPlay
+        muted
+        playsInline
+        onEnded={handleVideoEnded}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+          currentVideo === 0 ? "opacity-100 z-0" : "opacity-0 -z-10"
+        }`}
+      />
+      <video
+        ref={videoRef2}
+        src={videos[1]}
+        muted
+        playsInline
+        onEnded={handleVideoEnded}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+          currentVideo === 1 ? "opacity-100 z-0" : "opacity-0 -z-10"
+        }`}
+      />
 
       {/* Dark Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40 z-10" aria-hidden="true" />
