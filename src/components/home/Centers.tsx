@@ -260,7 +260,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
                   
                   <div className="grid md:grid-cols-2 gap-4">
                     {/* MxM Option */}
-                    <a href="https://mendozapormi.mendoza.gov.ar/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-200 hover:border-mendoza-blue-light hover:bg-slate-50 transition-all group">
+                    <a href="https://id.mxm.mendoza.gov.ar/realms/mendoza_x_mi/protocol/openid-connect/auth?client_id=mxm_portal&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fmxm.mendoza.gov.ar%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=umBiYrNUWYWLe_efphQxu2XBPKmCab9EntotJwBre2Y&code_challenge=heunD2jMJCNXzI_n14PMaYRpNb72qD2p2VGSW19YvQ8&code_challenge_method=S256" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-200 hover:border-mendoza-blue-light hover:bg-slate-50 transition-all group">
                       <div className="bg-mendoza-blue-dark rounded-full p-2 mb-2 group-hover:bg-mendoza-blue-light transition-colors">
                         <img src="/mxm.png" alt="Mendoza por Mí" className="h-6 w-auto object-contain invert brightness-0" />
                       </div>
