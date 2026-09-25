@@ -258,7 +258,19 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
                     Gestión de Turnos
                   </h4>
                   
-                  <div className="grid md:grid-cols-2 gap-4">
+                  {modalCentro.type === 'Posta Sanitaria' ? (
+                    <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-center gap-3">
+                      <div className="bg-amber-100 text-amber-600 rounded-full p-2 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                      </div>
+                      <p className="text-sm font-bold text-amber-800">
+                        Para solicitar turno debe realizarlo de manera presencial.
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="grid md:grid-cols-2 gap-4">
                     {/* MxM Option */}
                     <a href="https://id.mxm.mendoza.gov.ar/realms/mendoza_x_mi/protocol/openid-connect/auth?client_id=mxm_portal&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fmxm.mendoza.gov.ar%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=umBiYrNUWYWLe_efphQxu2XBPKmCab9EntotJwBre2Y&code_challenge=heunD2jMJCNXzI_n14PMaYRpNb72qD2p2VGSW19YvQ8&code_challenge_method=S256" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-200 hover:border-mendoza-blue-light hover:bg-slate-50 transition-all group">
                       <div className="bg-mendoza-blue-dark rounded-full p-2 mb-2 group-hover:bg-mendoza-blue-light transition-colors">
@@ -279,6 +291,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
                       <span className="text-xs text-slate-500 text-center mt-1">Línea de atención ciudadana</span>
                     </div>
                   </div>
+                  )}
                 </div>
 
                 {modalCentro.type !== 'Hospital' && (
