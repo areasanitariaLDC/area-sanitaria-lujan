@@ -105,9 +105,113 @@ export default function ComunidadPage() {
                 </span>
               </summary>
               <div className="px-6 pb-6 text-white/90 bg-mendoza-blue-dark border-t border-white/10 mt-2 pt-4">
-                <p>
-                  Información sobre el calendario nacional de vacunación, campañas vigentes y centros vacunatorios en Luján de Cuyo. (Contenido a desarrollar)
+                <p className="mb-4">
+                  A continuación encontrarás el listado de los centros vacunatorios del departamento de Luján de Cuyo con sus respectivos días y horarios de atención:
                 </p>
+                <div className="overflow-x-auto bg-white rounded-xl shadow-inner border border-slate-200">
+                  <table className="w-full text-left text-sm text-slate-700">
+                    <thead className="bg-slate-50 text-mendoza-blue-dark font-bold uppercase text-xs border-b border-slate-200">
+                      <tr>
+                        <th className="px-4 py-3">Nombre Efector</th>
+                        <th className="px-4 py-3">Domicilio</th>
+                        <th className="px-4 py-3">Distrito</th>
+                        <th className="px-4 py-3 min-w-[200px]">Días y horarios de vacunación</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100">
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 3</td>
+                        <td className="px-4 py-3">B° Supe, Ingeniero Krause y Cutral-Co Luján</td>
+                        <td className="px-4 py-3">Carrodilla</td>
+                        <td className="px-4 py-3">Lunes, miércoles y viernes 8 a 17.30<br/>Martes y jueves de 8 a 13.30<br/>Sábados de 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 202</td>
+                        <td className="px-4 py-3">B° Solar de Cuyo M J – C 35</td>
+                        <td className="px-4 py-3">Perdriel</td>
+                        <td className="px-4 py-3">Lunes a viernes de 8 a 17.30<br/>Sábados 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 217</td>
+                        <td className="px-4 py-3">Manuel Antonio Sáez 8257</td>
+                        <td className="px-4 py-3">Carrodilla</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 13.30<br/>Sábados de 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 218</td>
+                        <td className="px-4 py-3">Los Alerces Terrada 8080 Luján</td>
+                        <td className="px-4 py-3">Carrodilla</td>
+                        <td className="px-4 py-3">Lunes a miércoles, de 8 a 13.30<br/>Jueves de 8 a 16.30<br/>Viernes de 8 a 13.30<br/>Sábados de 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 224</td>
+                        <td className="px-4 py-3">Bº Costa Flores M-A C-13 Luján – Perdriel</td>
+                        <td className="px-4 py-3">Pedriel</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 13.30<br/>Sábados de 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 31</td>
+                        <td className="px-4 py-3">Federico Serpa y Republica del Libano</td>
+                        <td className="px-4 py-3">Luján de cuyo</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 7 a 13.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 32</td>
+                        <td className="px-4 py-3">Saenz Peña 8801</td>
+                        <td className="px-4 py-3">Las Compuertas</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 13.30<br/>Sábados 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 33</td>
+                        <td className="px-4 py-3">Calle Cobos s/n La Colonia</td>
+                        <td className="px-4 py-3">Agrelo</td>
+                        <td className="px-4 py-3">Lunes 8 a 12.30<br/>Martes de 8 a 17.30<br/>Miércoles a viernes, de 8 a 12.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 34</td>
+                        <td className="px-4 py-3">Ruta 7 km 60</td>
+                        <td className="px-4 py-3">Potrerillos</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 18<br/>Sábados 8 a 12</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 35</td>
+                        <td className="px-4 py-3">San Martin 8995</td>
+                        <td className="px-4 py-3">Agrelo</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 13.30<br/>Sábados 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 36</td>
+                        <td className="px-4 py-3">Ruta 16 km 11</td>
+                        <td className="px-4 py-3">Carrizal de Arriba</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 13.30<br/>Sábados de 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 37</td>
+                        <td className="px-4 py-3">Ruta 16 km 20</td>
+                        <td className="px-4 py-3">Carrizal de Abajo</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 13.30<br/>Sábados de 8 a 11.30</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 38</td>
+                        <td className="px-4 py-3">Italia 5600</td>
+                        <td className="px-4 py-3">Chacras de Coria</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 17.30<br/>Sábados de 8 a 12</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Centro de Salud 39</td>
+                        <td className="px-4 py-3">Ruta 40, km 38 B° Cuadro Estación</td>
+                        <td className="px-4 py-3">Ugarteche</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 8 a 18<br/>Sábados 8 a 12</td>
+                      </tr>
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="px-4 py-3 font-semibold">Consultorios externos</td>
+                        <td className="px-4 py-3">Lateral Oeste del Acceso Sur y Quintana</td>
+                        <td className="px-4 py-3">Perdriel</td>
+                        <td className="px-4 py-3">Lunes a viernes, de 7 a 13.30<br/>Sábados 7 a 11.30</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </details>
 
