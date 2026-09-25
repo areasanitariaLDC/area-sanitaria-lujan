@@ -50,20 +50,20 @@ export default function Header() {
             {/* Dropdown Content */}
             {isMenuOpen && (
               <div className="absolute right-0 mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-2 flex flex-col z-50 animate-in fade-in slide-in-from-top-2">
-                <a 
-                  href="#mapa" 
+                <Link 
+                  href="/#mapa" 
                   onClick={() => setIsMenuOpen(false)}
                   className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
                 >
                   Mapa
-                </a>
-                <a 
-                  href="#centros" 
+                </Link>
+                <Link 
+                  href="/#centros" 
                   onClick={() => setIsMenuOpen(false)}
                   className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
                 >
                   Centros de Salud
-                </a>
+                </Link>
                 <Link 
                   href="/comunidad" 
                   onClick={() => setIsMenuOpen(false)}
@@ -71,13 +71,13 @@ export default function Header() {
                 >
                   Comunidad
                 </Link>
-                <a 
-                  href="#equipos" 
+                <Link 
+                  href="/#equipos" 
                   onClick={() => setIsMenuOpen(false)}
                   className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
                 >
                   Equipos de Salud
-                </a>
+                </Link>
               </div>
             )}
           </div>
