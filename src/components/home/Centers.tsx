@@ -10,7 +10,8 @@ interface CentersProps {
 
 export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }: CentersProps) {
   const [expandedCenterIndex, setExpandedCenterIndex] = useState<number | null>(null);
-  const [activeDay, setActiveDay] = useState<number>(0); // 0 = Lunes, 1 = Martes, etc (placeholder)
+  const [activeDay, setActiveDay] = useState<number>(0); 
+  const [activeCategory, setActiveCategory] = useState<string | null>(null);
   
   const hospitales = centros.map((c, i) => ({ ...c, originalIndex: i })).filter(c => c.type === 'Hospital');
   const centrosSalud = centros.map((c, i) => ({ ...c, originalIndex: i })).filter(c => c.type === 'Centro de Salud');
@@ -191,6 +192,42 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
     );
   };
 
+  const renderCategoryBlock = (title: string, category: string, items: any[]) => {
+    const isActive = activeCategory === category;
+    if (items.length === 0) return null;
+
+    return (
+      <div className="mb-6 bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <button 
+          onClick={() => setActiveCategory(isActive ? null : category)}
+          className="w-full flex items-center justify-between p-6 bg-white hover:bg-slate-50 transition-colors"
+        >
+          <div className="flex items-center gap-4">
+            <h3 className="text-2xl font-bold text-mendoza-blue-dark">
+              {title}
+            </h3>
+            <span className="bg-slate-100 text-slate-600 font-bold px-3 py-1 rounded-full text-sm">
+              {items.length}
+            </span>
+          </div>
+          <div className={`transform transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-mendoza-blue-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+        
+        {isActive && (
+          <div className="p-6 pt-0 border-t border-slate-100 bg-slate-50/50 animate-in slide-in-from-top-2 duration-300">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start mt-6">
+              {items.map((item) => renderCenterCard(item.originalIndex, item))}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  };
+
   return (
     <section id="centros" className="py-20 bg-slate-50">
       <div className="container mx-auto px-4">
@@ -201,46 +238,16 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
           <h2 className="text-3xl md:text-4xl font-bold text-mendoza-blue-dark mb-4">
             Aquí podes encontrar los principales Hospitales de la Provincia y Buscar también Centros de Salud y Postas Sanitarias del Departamento de Luján de Cuyo
           </h2>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-slate-600 mb-8">
             Buscá por nombre o localidad. Contamos con {centros.length} establecimientos en el departamento.
           </p>
+          
+          <div className="max-w-4xl mx-auto text-left">
+            {renderCategoryBlock("Hospitales Provinciales", "Hospital", hospitales)}
+            {renderCategoryBlock("Centros de Salud (CAPS)", "Centro de Salud", centrosSalud)}
+            {renderCategoryBlock("Postas Sanitarias", "Posta Sanitaria", postas)}
+          </div>
         </div>
-
-        {/* Hospitales Provinciales */}
-        {hospitales.length > 0 && (
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-mendoza-blue-dark mb-6 pb-2 border-b-2 border-mendoza-blue-light/30 inline-block">
-              Hospitales Provinciales
-            </h3>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto items-start">
-              {hospitales.map((item) => renderCenterCard(item.originalIndex, item))}
-            </div>
-          </div>
-        )}
-
-        {/* Centros de Salud (CAPS) */}
-        {centrosSalud.length > 0 && (
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-mendoza-blue-dark mb-6 pb-2 border-b-2 border-mendoza-blue-light/30 inline-block">
-              Centros de Salud (CAPS)
-            </h3>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto items-start">
-              {centrosSalud.map((item) => renderCenterCard(item.originalIndex, item))}
-            </div>
-          </div>
-        )}
-
-        {/* Postas Sanitarias */}
-        {postas.length > 0 && (
-          <div>
-            <h3 className="text-2xl font-bold text-mendoza-blue-dark mb-6 pb-2 border-b-2 border-mendoza-blue-light/30 inline-block">
-              Postas Sanitarias
-            </h3>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto items-start">
-              {postas.map((item) => renderCenterCard(item.originalIndex, item))}
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );
