@@ -287,7 +287,7 @@ export default function ComunidadPage() {
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="hover:underline flex items-center gap-2">
+                        <a href="/ficha-epidemiologica-efe.docx" download className="hover:underline flex items-center gap-2">
                           Descargar Ficha Epidemiológica
                         </a>
                       </li>
