@@ -22,8 +22,13 @@ export default function Footer() {
             <span className="text-white hover:underline decoration-white/30 underline-offset-4">Ministerio de Salud y Deportes</span>
           </a>
           
-          <a href="https://www.mendoza.gov.ar/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-white/30 underline-offset-4">
-            Gobierno de Mendoza
+          <a href="https://www.mendoza.gov.ar/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:opacity-80 transition-opacity">
+            <img 
+              src="/logo-mendoza-argentina.png" 
+              alt="Logo Gobierno de Mendoza" 
+              className="h-12 w-auto mb-2" 
+            />
+            <span className="text-white hover:underline decoration-white/30 underline-offset-4">Gobierno de Mendoza</span>
           </a>
           
           <a href="https://id.mxm.mendoza.gov.ar/realms/mendoza_x_mi/protocol/openid-connect/auth?client_id=mxm_portal&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fmxm.mendoza.gov.ar%2Fapi%2Fauth%2Fcallback%2Fkeycloak&state=umBiYrNUWYWLe_efphQxu2XBPKmCab9EntotJwBre2Y&code_challenge=heunD2jMJCNXzI_n14PMaYRpNb72qD2p2VGSW19YvQ8&code_challenge_method=S256" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:opacity-80 transition-opacity">
