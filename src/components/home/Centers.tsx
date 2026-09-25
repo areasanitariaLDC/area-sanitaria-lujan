@@ -71,7 +71,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
             </div>
           </div>
           
-          {centro.type !== 'Hospital' && (
+          {true && (
             <button 
               onClick={(e) => {
                 e.stopPropagation();
@@ -281,6 +281,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
                   </div>
                 </div>
 
+                {modalCentro.type !== 'Hospital' && (
                 <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
                   <div className="text-xs font-bold text-mendoza-blue-light uppercase tracking-wider">Atención por especialidad</div>
@@ -341,6 +342,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
                   Las agendas reales se cargarán próximamente cuando envíes la información del establecimiento.
                 </div>
               </div>
+                )}
             </div>
           </div>
         </div>
