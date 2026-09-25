@@ -220,7 +220,7 @@ export default function ComunidadPage() {
               </div>
             </details>
 
-            {/* Accordion Item 2 */}
+                        {/* Accordion Item 2 */}
             <details className="group bg-mendoza-blue-dark rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex cursor-pointer items-center justify-between p-6 text-white font-bold text-xl">
                 Campañas de prevención
@@ -230,10 +230,195 @@ export default function ComunidadPage() {
                   </svg>
                 </span>
               </summary>
-              <div className="px-6 pb-6 text-white/90 bg-mendoza-blue-dark border-t border-white/10 mt-2 pt-4">
-                <p>
-                  Recomendaciones para la prevención de enfermedades estacionales, dengue, cuidado cardiovascular y más. (Contenido a desarrollar)
-                </p>
+              <div className="px-6 pb-6 text-slate-800 bg-slate-50 border-t border-white/10 mt-2 pt-6">
+                
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  {/* Bronquiolitis Card */}
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col transition-transform hover:-translate-y-1">
+                    <img src="/campana-bronquiolitis.png" alt="Campaña Bronquiolitis" className="w-full h-auto object-cover" />
+                  </div>
+                  
+                  {/* HPV Card */}
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col transition-transform hover:-translate-y-1 relative group/hpv">
+                    <img src="/campana-hpv.png" alt="Campaña Cáncer de Cuello de Útero" className="w-full h-auto object-cover" />
+                    
+                    {/* Hover Overlay Button to scroll to info */}
+                    <div className="absolute inset-0 bg-mendoza-blue-dark/20 opacity-0 group-hover/hpv:opacity-100 transition-opacity flex items-center justify-center">
+                      <a href="#info-hpv" className="bg-mendoza-gold text-mendoza-blue-dark font-bold px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-transform flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                        </svg>
+                        Ver centros de testeo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Info HPV Section */}
+                <div id="info-hpv" className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 scroll-mt-24">
+                  <div className="flex items-center gap-4 mb-6 border-b border-slate-100 pb-4">
+                    <div className="bg-pink-600 text-white p-3 rounded-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-pink-600">1 test = cero cáncer</h3>
+                      <p className="text-slate-500 font-medium">Campaña de prevención del cáncer de cuello de útero</p>
+                    </div>
+                  </div>
+
+                  <div className="prose prose-slate max-w-none">
+                    <p className="text-lg font-bold text-mendoza-blue-dark">
+                      Hacete el TEST DE HPV para prevenir el cáncer de cuello uterino. Test simple, rápido que salva vidas.
+                    </p>
+                    <p>
+                      El cáncer de cuello de útero es 100% prevenible. El Test de HPV detecta el virus que causa esta enfermedad.
+                    </p>
+                    
+                    <div className="bg-pink-50 border-l-4 border-pink-500 p-4 my-6 rounded-r-lg">
+                      <h4 className="font-bold text-pink-700 mb-2">Antes de hacerte el test:</h4>
+                      <ul className="list-none space-y-2 mb-0">
+                        <li className="flex items-start gap-2"><span className="text-green-500">✅</span> No hacerlo durante el período menstrual.</li>
+                        <li className="flex items-start gap-2"><span className="text-green-500">✅</span> Esperar 48 hs después de tener relaciones sexuales, usar óvulos, cremas vaginales o duchas internas.</li>
+                        <li className="flex items-start gap-2"><span className="text-green-500">✅</span> Si tuviste parto reciente, esperá al menos 3 meses.</li>
+                      </ul>
+                    </div>
+
+                    <p><strong>Podés hacer el test de HPV de manera gratuita en todos los hospitales y centros de salud públicos de Mendoza.</strong></p>
+                    <ul className="list-disc pl-5 space-y-1 mt-2 mb-6">
+                      <li><strong>Mujeres con coberturas privadas o particulares:</strong> podrán realizarse su test en cualquier laboratorio bioquímico privado adherido a la campaña, a un monto fijado por convenio.</li>
+                      <li><strong>Docentes y personal de DGE:</strong> con cualquier tipo de cobertura con puntos de testeo en las escuelas, en horarios definidos, en concordancia con la campaña de vacunación escolar.</li>
+                      <li>Establecimientos de salud de OSEP.</li>
+                      <li>Hospital Universitario.</li>
+                    </ul>
+
+                    <div className="bg-slate-100 p-4 rounded-lg flex flex-col md:flex-row justify-between items-center gap-4 my-6">
+                      <div>
+                        <p className="font-bold text-mendoza-blue-dark m-0">¿Dudas o consultas?</p>
+                        <p className="text-sm m-0">Para obtener orientación e información adicional:</p>
+                      </div>
+                      <div className="flex flex-col gap-2 text-sm font-semibold">
+                        <span className="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg> Línea 148, opción 6 "Salud"</span>
+                        <a href="mailto:preventivosmendoza@mendoza.gov.ar" className="flex items-center gap-2 text-mendoza-blue-light hover:underline"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg> preventivosmendoza@mendoza.gov.ar</a>
+                        <a href="https://casadelamujer.mendoza.gov.ar/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-pink-600 hover:underline"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg> Acceso a Casa de la Mujer</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h4 className="text-xl font-bold text-mendoza-blue-dark mt-8 mb-4 border-b border-slate-200 pb-2">Centros de Testeo en Luján de Cuyo</h4>
+                  <div className="overflow-x-auto bg-white rounded-xl shadow-sm border border-slate-200">
+                    <table className="w-full text-left text-sm text-slate-700">
+                      <thead className="bg-slate-50 text-mendoza-blue-dark font-bold uppercase text-xs border-b border-slate-200">
+                        <tr>
+                          <th className="px-4 py-3">Nombre Efector</th>
+                          <th className="px-4 py-3">Domicilio (Maps)</th>
+                          <th className="px-4 py-3">Días y horarios</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-100">
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 03 Pablo Casale</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/fped3yP9Psxq6jBEA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">B° Supe, Ingeniero Krause y Cutral-Co Luján</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 31 David Busana</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/D3DbcWSruTK9Z2AV7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Federico Serpa y Republica del Libano</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 32 Las Compuertas</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/kanEt8nDB5PZRGR77" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Saenz Peña 8801</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 33 La Colonia</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/E9u6WnNPwkNmcxmg9" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Calle Cobos s/n La Colonia</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 34 Potrerillos</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/CUys6RCrDd7iR8z39" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Ruta 7 km 60</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 35 Agrelo</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/CUYFX3D3t4YPxMfVA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">San Martin 8995</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 36 Carrizal del Medio</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/cdWjmigGMTk8oK3i6" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Ruta 16 km 11</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 37 Carrizal de Abajo</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/6wM97RTDjYvuXasF9" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Ruta 16 km 20</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 38 Chacras de Coria</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/aTcyS9UX5FznaXUm6" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Italia 5648</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 39 Ugarteche</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/wxhi6vFH7Cdqe3qy7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Ruta 40, km 38 B° Cuadro Estación</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 202 Perdriel</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/T8ZxV1S176JYuMdSA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">B° Solar de Cuyo M J – C 35</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 217 Los Olivos</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/6FDjRCq8Xe6RTwpf7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Manuel Antonio Sáez 8257</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 218 Los Alerces</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/SWqVHdwkvDX3effb9" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Los Alerces Terrada 8080 Luján</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 224 Costa Flores</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/qAe1WGVUDC7vPDR59" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Bº Costa Flores M-A C-13 Luján – Perdriel</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">POSTA SANITARIA Nº 521 Cacheuta Norte</td>
+                          <td className="px-4 py-3"><a href="https://www.google.com/maps/?q=-33.01085800000000000000,-69.12142100000000000000" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Camping EDEMSA</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">POSTA SANITARIA Nº 525 Bella Vista</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/F7sbn7cHffFUNFb6A" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Luján de Cuyo</a></td>
+                          <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
+                        </tr>
+                        <tr className="bg-slate-100">
+                          <td colSpan={3} className="px-4 py-3 font-bold text-mendoza-blue-dark">Laboratorios Privados</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">Laboratorio Scopel</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/2RkdTcj8jGV1XkpcA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Juan de Dios Vallcanera 80 Local 2, Luján de Cuyo</a></td>
+                          <td className="px-4 py-3">-</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">Innovis Laboratorio Bioquímico Integral</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/rZegdvdhzGDKfjBD7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Viamonte 5263 Chacras de Coria, Luján de Cuyo</a></td>
+                          <td className="px-4 py-3">Lunes a viernes de 7 a 13 / 14 a 19hs.</td>
+                        </tr>
+                        <tr className="hover:bg-slate-50">
+                          <td className="px-4 py-3 font-semibold">Laboratorio de análisis clínicos Gastrolab</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/8yhSg8AAv9YuTG3QA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Rivadavia 88, Luján de Cuyo</a></td>
+                          <td className="px-4 py-3">Lunes a viernes 8:30 a 12:30 / 16 a 20hs.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </details>
           </div>
