@@ -269,15 +269,15 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
                     </a>
                     
                     {/* 148 Option */}
-                    <a href="tel:148" className="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-200 hover:border-pink-500 hover:bg-pink-50 transition-all group">
-                      <div className="bg-pink-100 text-pink-600 rounded-full p-2 mb-2 group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                    <div className="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-200 bg-pink-50/30">
+                      <div className="bg-pink-100 text-pink-600 rounded-full p-2 mb-2">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                       </div>
                       <span className="text-sm font-bold text-slate-700 text-center">Llamar al 148 (Opción 6)</span>
                       <span className="text-xs text-slate-500 text-center mt-1">Línea de atención ciudadana</span>
-                    </a>
+                    </div>
                   </div>
                 </div>
 
