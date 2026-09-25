@@ -1,6 +1,11 @@
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+
 export default function ComunidadPage() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <div className="min-h-screen flex flex-col font-sans">
+      <Header />
+      <main className="flex-grow flex flex-col">
       {/* Hero Section */}
       <section className="relative w-full py-20 bg-mendoza-blue-dark overflow-hidden">
         {/* Subtle circle patterns for background */}
@@ -235,5 +240,7 @@ export default function ComunidadPage() {
         </div>
       </section>
     </main>
+    <Footer />
+  </div>
   );
 }
