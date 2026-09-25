@@ -249,7 +249,39 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
                   )}
                 </div>
 
-              <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
+                              {/* Gestión de Turnos Section */}
+                <div className="bg-white rounded-xl p-5 border-2 border-mendoza-blue-light/20 shadow-sm mb-6">
+                  <h4 className="text-sm font-bold text-mendoza-blue-dark uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-mendoza-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Gestión de Turnos
+                  </h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {/* MxM Option */}
+                    <a href="https://mendozapormi.mendoza.gov.ar/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-200 hover:border-mendoza-blue-light hover:bg-slate-50 transition-all group">
+                      <div className="bg-mendoza-blue-dark rounded-full p-2 mb-2 group-hover:bg-mendoza-blue-light transition-colors">
+                        <img src="/mxm.png" alt="Mendoza por Mí" className="h-6 w-auto object-contain invert brightness-0" />
+                      </div>
+                      <span className="text-sm font-bold text-slate-700 text-center">Gestionar turno online</span>
+                      <span className="text-xs text-slate-500 text-center mt-1">Vía Mendoza por Mí</span>
+                    </a>
+                    
+                    {/* 148 Option */}
+                    <a href="tel:148" className="flex flex-col items-center justify-center p-4 rounded-xl border border-slate-200 hover:border-pink-500 hover:bg-pink-50 transition-all group">
+                      <div className="bg-pink-100 text-pink-600 rounded-full p-2 mb-2 group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                      </div>
+                      <span className="text-sm font-bold text-slate-700 text-center">Llamar al 148 (Opción 6)</span>
+                      <span className="text-xs text-slate-500 text-center mt-1">Línea de atención ciudadana</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
                   <div className="text-xs font-bold text-mendoza-blue-light uppercase tracking-wider">Atención por especialidad</div>
                   <span className="text-[10px] font-bold bg-mendoza-gold/20 text-mendoza-gold px-2 py-1 rounded-full uppercase w-fit">
