@@ -260,46 +260,35 @@ export default function ComunidadPage() {
                 </div>
 
                 {/* Info HPV Section */}
-                                </div>
+                
               </div>
             </details>
+          </div>
+        </div>
+      </section>
 
-                        {/* Accordion Item 2 */}
-            <details className="group bg-mendoza-blue-dark rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-              <summary className="flex cursor-pointer items-center justify-between p-6 text-white font-bold text-xl">
-                Campañas de prevención
-                <span className="flex-shrink-0 ml-4 bg-white text-mendoza-blue-dark rounded-full w-8 h-8 flex items-center justify-center group-open:-rotate-45 transition-transform duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
-                  </svg>
-                </span>
-              </summary>
-              <div className="px-6 pb-6 text-slate-800 bg-slate-50 border-t border-white/10 mt-2 pt-6">
-                
-                <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  {/* Bronquiolitis Card */}
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col transition-transform hover:-translate-y-1">
-                    <img src="/campana-bronquiolitis.png" alt="Campaña Bronquiolitis" className="w-full h-auto object-cover" />
-                  </div>
-                  
-                  {/* HPV Card */}
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col transition-transform hover:-translate-y-1 relative group/hpv">
-                    <img src="/campana-hpv.png" alt="Campaña Cáncer de Cuello de Útero" className="w-full h-auto object-cover" />
-                    
-                    {/* Hover Overlay Button to scroll to info */}
-                    <div className="absolute inset-0 bg-mendoza-blue-dark/20 opacity-0 group-hover/hpv:opacity-100 transition-opacity flex items-center justify-center">
-                      <a href="#info-hpv" className="bg-mendoza-gold text-mendoza-blue-dark font-bold px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-transform flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                        </svg>
-                        Ver centros de testeo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Info HPV Section */}
-                <div id="info-hpv" className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 scroll-mt-24">
+      {/* HPV Info Modal */}
+      {isHpvModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+          <div 
+            className="absolute inset-0 bg-mendoza-blue-dark/70 backdrop-blur-sm transition-opacity" 
+            onClick={() => setIsHpvModalOpen(false)}
+          ></div>
+          
+          <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto animate-in zoom-in-95 duration-200">
+            <div className="sticky top-0 bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10">
+              <h3 className="text-xl font-bold text-pink-600">Centros de Testeo HPV</h3>
+              <button 
+                onClick={() => setIsHpvModalOpen(false)}
+                className="w-8 h-8 flex-shrink-0 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-full flex items-center justify-center transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div className="p-2 md:p-4">
+              <div className="bg-white rounded-2xl p-4 md:p-6">
                   <div className="flex items-center gap-4 mb-6 border-b border-slate-100 pb-4">
                     <div className="bg-pink-600 text-white p-3 rounded-full">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -463,73 +452,6 @@ export default function ComunidadPage() {
                     </table>
                   </div>
                 </div>
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      {/* HPV Info Modal */}
-      {isHpvModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
-          <div 
-            className="absolute inset-0 bg-mendoza-blue-dark/70 backdrop-blur-sm transition-opacity" 
-            onClick={() => setIsHpvModalOpen(false)}
-          ></div>
-          
-          <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto animate-in zoom-in-95 duration-200">
-            <div className="sticky top-0 bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between z-10">
-              <h3 className="text-xl font-bold text-pink-600">Centros de Testeo HPV</h3>
-              <button 
-                onClick={() => setIsHpvModalOpen(false)}
-                className="w-8 h-8 flex-shrink-0 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-full flex items-center justify-center transition-colors"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </button>
-            </div>
-            <div className="p-2 md:p-4">
-                              </div>
-              </div>
-            </details>
-
-                        {/* Accordion Item 2 */}
-            <details className="group bg-mendoza-blue-dark rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-              <summary className="flex cursor-pointer items-center justify-between p-6 text-white font-bold text-xl">
-                Campañas de prevención
-                <span className="flex-shrink-0 ml-4 bg-white text-mendoza-blue-dark rounded-full w-8 h-8 flex items-center justify-center group-open:-rotate-45 transition-transform duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
-                  </svg>
-                </span>
-              </summary>
-              <div className="px-6 pb-6 text-slate-800 bg-slate-50 border-t border-white/10 mt-2 pt-6">
-                
-                <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  {/* Bronquiolitis Card */}
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col transition-transform hover:-translate-y-1">
-                    <img src="/campana-bronquiolitis.png" alt="Campaña Bronquiolitis" className="w-full h-auto object-cover" />
-                  </div>
-                  
-                  {/* HPV Card */}
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col transition-transform hover:-translate-y-1 relative group/hpv">
-                    <img src="/campana-hpv.png" alt="Campaña Cáncer de Cuello de Útero" className="w-full h-auto object-cover" />
-                    
-                    {/* Hover Overlay Button to scroll to info */}
-                    <div className="absolute inset-0 bg-mendoza-blue-dark/20 opacity-0 group-hover/hpv:opacity-100 transition-opacity flex items-center justify-center">
-                      <a href="#info-hpv" className="bg-mendoza-gold text-mendoza-blue-dark font-bold px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-transform flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                        </svg>
-                        Ver centros de testeo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Info HPV Section */}
-                
             </div>
           </div>
         </div>
