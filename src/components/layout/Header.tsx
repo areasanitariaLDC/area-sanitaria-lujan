@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -34,6 +36,20 @@ export default function Header() {
         <div className="flex items-center gap-6">
           <img src="/logo-mendoza-horizontal.png" alt="Mendoza Gobierno" className="h-24 w-auto object-contain hidden sm:block drop-shadow-sm" />
           
+          
+          {/* Home button (only visible on non-root pages) */}
+          {pathname !== '/' && (
+            <Link 
+              href="/" 
+              className="text-mendoza-blue-dark p-2 hover:bg-slate-100 rounded-md transition-colors focus:outline-none flex items-center justify-center"
+              title="Volver a Inicio"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+            </Link>
+          )}
+
           {/* Dropdown Menu Container */}
           <div className="relative" ref={menuRef}>
             {/* Hamburger Button */}
