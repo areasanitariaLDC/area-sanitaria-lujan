@@ -64,21 +64,23 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
             </div>
           </div>
           
-          <button 
-            onClick={(e) => toggleExpand(e, i)}
-            className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-mendoza-blue-dark hover:bg-slate-200 transition-colors"
-            title={isExpanded ? "Contraer información" : "Expandir información y agenda"}
-          >
-            {isExpanded ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
-              </svg>
-            )}
-          </button>
+          {centro.type !== 'Hospital' && (
+            <button 
+              onClick={(e) => toggleExpand(e, i)}
+              className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-mendoza-blue-dark hover:bg-slate-200 transition-colors"
+              title={isExpanded ? "Contraer información" : "Expandir información y agenda"}
+            >
+              {isExpanded ? (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
+                </svg>
+              )}
+            </button>
+          )}
         </div>
 
         {!isExpanded && (
@@ -91,7 +93,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
           </div>
         )}
 
-        <div className="mt-auto pt-4 flex gap-3 border-t border-slate-100">
+        <div className="mt-auto pt-4 flex gap-3 border-t border-slate-100 justify-between items-center">
           <span 
             className={`font-bold text-sm flex items-center transition-colors ${
               isSelected ? 'text-red-600' : 'text-slate-500 group-hover:text-mendoza-blue-dark'
@@ -103,6 +105,19 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
             </svg>
             {isSelected ? 'Mostrando en mapa' : 'Ubicar en mapa'}
           </span>
+          
+          {centro.type === 'Hospital' && (
+            <a 
+              href="#" 
+              onClick={e => e.stopPropagation()}
+              className="text-sm font-bold text-mendoza-blue-light hover:text-mendoza-blue-dark transition-colors flex items-center gap-1"
+            >
+              Sitio web oficial
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          )}
         </div>
 
         {/* Expanded View */}
