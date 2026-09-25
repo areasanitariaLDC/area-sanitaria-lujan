@@ -239,7 +239,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
             Aquí podes encontrar los principales Hospitales de la Provincia y Buscar también Centros de Salud y Postas Sanitarias del Departamento de Luján de Cuyo
           </h2>
           <p className="text-lg text-slate-600 mb-8">
-            Buscá por nombre o localidad. Contamos con {centros.length} establecimientos en el departamento.
+            Buscá por nombre o localidad. Contamos con {centrosSalud.length + postas.length} establecimientos en el departamento.
           </p>
           
           <div className="max-w-4xl mx-auto text-left">
