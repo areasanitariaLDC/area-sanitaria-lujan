@@ -168,6 +168,54 @@
     "address": "Distrito El Carrizal, Departamento Luján de Cuyo"
   },
   {
+    "name": "Sendero Cerro Cocodrilo, RP89, Potrerillos, Mendoza, Argentina",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.9556986,
+    "lng": -69.1973836,
+    "address": "Ex RN7, Distrito Potrerillos"
+  },
+  {
+    "name": "Posta N° 521 Cacheuta",
+    "type": "Posta Sanitaria",
+    "description": "",
+    "lat": -33.0158455,
+    "lng": -69.1175068,
+    "address": "Ruta Provincial 82, Distrito Cacheuta"
+  },
+  {
+    "name": "Centro de Salud N° 34 \"Potrerillos\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.9561465,
+    "lng": -69.1959229,
+    "address": "Distrito Potrerillos, Departamento Luján de Cuyo"
+  },
+  {
+    "name": "Centro de Salud Nº 31 \"David Busana\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.0382824,
+    "lng": -68.8880462,
+    "address": "Federico Serpa 115, Distrito Ciudad de Luján de Cuyo"
+  },
+  {
+    "name": "Centro de Salud N° 39 \"Ugarteche\"",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -33.2090088,
+    "lng": -68.8835892,
+    "address": "Distrito Ugarteche, Departamento Luján de Cuyo"
+  },
+  {
+    "name": "Los Condores 353, Potrerillos, Mendoza, Argentina",
+    "type": "Centro de Salud",
+    "description": "",
+    "lat": -32.95749,
+    "lng": -69.199558,
+    "address": "Avenida Los Cóndores, Distrito Potrerillos"
+  },
+  {
     "name": "Hospital Lagomaggiore",
     "type": "Hospital",
     "description": "Alta Complejidad",
@@ -232,83 +280,139 @@
     "address": "Joaquín Víctor González 245"
   },
   {
-    "name": "Sendero Cerro Cocodrilo, RP89, Potrerillos, Mendoza, Argentina",
-    "type": "Centro de Salud",
-    "description": "",
-    "lat": -32.9556986,
-    "lng": -69.1973836,
-    "address": "Ex RN7, Distrito Potrerillos"
-  },
-  {
-    "name": "Posta N° 521 Cacheuta",
-    "type": "Posta Sanitaria",
-    "description": "",
-    "lat": -33.0158455,
-    "lng": -69.1175068,
-    "address": "Ruta Provincial 82, Distrito Cacheuta"
-  },
-  {
-    "name": "Hospital Paroissien",
+    "name": "Hospital Teodoro Schestakow",
     "type": "Hospital",
-    "description": "",
-    "lat": -32.9812436,
-    "lng": -68.7833699,
-    "address": "Godoy Cruz 495, Distrito Ciudad de Maipú"
+    "description": "Hospital Provincial",
+    "lat": -34.6200977,
+    "lng": -68.3252993,
+    "address": "Comandante Torres 150, Distrito Ciudad de San Rafael"
   },
   {
-    "name": "Centro de Salud N° 34 \"Potrerillos\"",
-    "type": "Centro de Salud",
-    "description": "",
-    "lat": -32.9561465,
-    "lng": -69.1959229,
-    "address": "Distrito Potrerillos, Departamento Luján de Cuyo"
-  },
-  {
-    "name": "Centro de Salud Nº 31 \"David Busana\"",
-    "type": "Centro de Salud",
-    "description": "",
-    "lat": -33.0382824,
-    "lng": -68.8880462,
-    "address": "Federico Serpa 115, Distrito Ciudad de Luján de Cuyo"
-  },
-  {
-    "name": "Hospital Paroissien",
+    "name": "Hospital Alfredo Perrupato",
     "type": "Hospital",
-    "description": "",
-    "lat": -32.9812436,
-    "lng": -68.7833699,
-    "address": "Godoy Cruz 495, Distrito Ciudad de Maipú"
+    "description": "Hospital Provincial",
+    "lat": -33.0801515,
+    "lng": -68.4882583,
+    "address": "Boulogne Sur Mer, Distrito Ciudad de San Martín"
   },
   {
-    "name": "Centro de Salud N° 39 \"Ugarteche\"",
-    "type": "Centro de Salud",
-    "description": "",
-    "lat": -33.2090088,
-    "lng": -68.8835892,
-    "address": "Distrito Ugarteche, Departamento Luján de Cuyo"
-  },
-  {
-    "name": "Hospital Paroissien",
+    "name": "Hospital Antonio Scaravelli",
     "type": "Hospital",
-    "description": "",
-    "lat": -32.9812436,
-    "lng": -68.7833699,
-    "address": "Godoy Cruz 495, Distrito Ciudad de Maipú"
+    "description": "Hospital Provincial",
+    "lat": -33.5754227,
+    "lng": -69.0098509,
+    "address": "Martín M. Güemes 1441, Ciudad de Tunuyán"
   },
   {
-    "name": "Los Condores 353, Potrerillos, Mendoza, Argentina",
-    "type": "Centro de Salud",
-    "description": "",
-    "lat": -32.95749,
-    "lng": -69.199558,
-    "address": "Avenida Los Cóndores, Distrito Potrerillos"
-  },
-  {
-    "name": "Hospital Paroissien",
+    "name": "Hospital Regional de Malargüe",
     "type": "Hospital",
-    "description": "",
-    "lat": -32.9812436,
-    "lng": -68.7833699,
-    "address": "Godoy Cruz 495, Distrito Ciudad de Maipú"
+    "description": "Hospital Provincial",
+    "lat": -35.4754846,
+    "lng": -69.5894947,
+    "address": "Hospital Regional Malargüe, Malargue"
+  },
+  {
+    "name": "Hospital Enfermeros Argentinos",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -34.9741341,
+    "lng": -67.6977088,
+    "address": "Mitre 601, Distrito Ciudad de General Alvear"
+  },
+  {
+    "name": "Hospital Carlos Pereyra",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -32.8705045,
+    "lng": -68.8287482,
+    "address": "Ituzaingó 2835, Ciudad de Mendoza"
+  },
+  {
+    "name": "Hospital Carlos Saporiti",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -33.1969908,
+    "lng": -68.4607827,
+    "address": "Independencia 629, Rivadavia"
+  },
+  {
+    "name": "Hospital Dr. Ramón Carrillo",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -32.8512512,
+    "lng": -68.8143722,
+    "address": "Capitán Vázquez"
+  },
+  {
+    "name": "Hospital General Las Heras",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -32.89,
+    "lng": -68.83,
+    "address": "Mendoza"
+  },
+  {
+    "name": "Hospital Victorino Tagarelli",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -33.7744879,
+    "lng": -69.0580092,
+    "address": "Hospital Victorino Tagarelli - San Carlos, Distrito Eugenio Bustos"
+  },
+  {
+    "name": "Consultorios externos Luján de Cuyo",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -32.89,
+    "lng": -68.83,
+    "address": "Mendoza"
+  },
+  {
+    "name": "Hospital Luis Chrabalowski",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -32.5939218,
+    "lng": -69.3468606,
+    "address": "Hospital Dr. Luis Chrabalowski, Las Heras"
+  },
+  {
+    "name": "Hospital Domingo Sicoli",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -32.7217363,
+    "lng": -68.5877413,
+    "address": "Belgrano, Distrito Villa Tulumaya"
+  },
+  {
+    "name": "Hospital Fernando Arenas Raffo",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -33.2542573,
+    "lng": -68.145107,
+    "address": "Enrique González, Distrito Ciudad de Santa Rosa"
+  },
+  {
+    "name": "Hospital Arturo Illia",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -33.4584856,
+    "lng": -67.5493139,
+    "address": "Uriburu, Distrito Villa Nueva"
+  },
+  {
+    "name": "Hospital Eva Perón",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -34.908284,
+    "lng": -67.815404,
+    "address": "Hospital Eva Peron - San Rafael, San Rafael"
+  },
+  {
+    "name": "Hospital Héctor Gailhac",
+    "type": "Hospital",
+    "description": "Hospital Provincial",
+    "lat": -32.8427392,
+    "lng": -68.773486,
+    "address": "Aristóbulo del Valle 1372"
   }
 ]
