@@ -20,8 +20,8 @@ export default function Hero() {
     }
   }, []);
 
-  const handleVideoEnded = () => {
-    const nextVideo = (currentVideo + 1) % videos.length;
+  const handleVideoEnded = (currentIndex: number) => {
+    const nextVideo = (currentIndex + 1) % videos.length;
     setCurrentVideo(nextVideo);
     
     if (nextVideo === 0 && videoRef1.current) {
@@ -30,6 +30,20 @@ export default function Hero() {
     } else if (nextVideo === 1 && videoRef2.current) {
       videoRef2.current.currentTime = 0;
       videoRef2.current.play().catch(e => console.log(e));
+    }
+  };
+
+  const handleTimeUpdate1 = () => {
+    if (videoRef1.current && videoRef1.current.currentTime >= 14) {
+      videoRef1.current.pause();
+      handleVideoEnded(0);
+    }
+  };
+
+  const handleTimeUpdate2 = () => {
+    if (videoRef2.current && videoRef2.current.currentTime >= 25) {
+      videoRef2.current.pause();
+      handleVideoEnded(1);
     }
   };
 
@@ -44,7 +58,8 @@ export default function Hero() {
         autoPlay
         muted
         playsInline
-        onEnded={handleVideoEnded}
+        onTimeUpdate={handleTimeUpdate1}
+        onEnded={() => handleVideoEnded(0)}
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
           currentVideo === 0 ? "opacity-100 z-0" : "opacity-0 -z-10"
         }`}
@@ -54,7 +69,8 @@ export default function Hero() {
         src={videos[1]}
         muted
         playsInline
-        onEnded={handleVideoEnded}
+        onTimeUpdate={handleTimeUpdate2}
+        onEnded={() => handleVideoEnded(1)}
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
           currentVideo === 1 ? "opacity-100 z-0" : "opacity-0 -z-10"
         }`}
