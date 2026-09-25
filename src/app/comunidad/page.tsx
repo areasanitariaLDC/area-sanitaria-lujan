@@ -295,6 +295,68 @@ export default function ComunidadPage() {
                   </div>
                 </div>
               </details>
+
+            {/* Accordion Item 3 */}
+            <details className="group bg-mendoza-blue-dark rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+              <summary className="flex cursor-pointer items-center justify-between p-6 text-white font-bold text-xl">
+                Gestión de Turnos
+                <span className="flex-shrink-0 ml-4 bg-white text-mendoza-blue-dark rounded-full w-8 h-8 flex items-center justify-center group-open:-rotate-45 transition-transform duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-6 pb-6 text-white/90 bg-mendoza-blue-dark border-t border-white/10 mt-2 pt-4">
+                <div className="space-y-6">
+                  <div className="bg-white/10 rounded-xl p-5 border border-white/20">
+                    <h4 className="text-xl font-bold text-mendoza-gold mb-3 flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      Centros de Salud y Hospitales
+                    </h4>
+                    <p className="mb-4">Para Centros de Salud (CAPS) y Hospitales Provinciales, la solicitud de turnos se realiza a través de las siguientes vías:</p>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <div className="bg-white rounded-lg p-4 text-slate-800 flex items-center gap-4 shadow-sm">
+                        <img src="/mxm.png" alt="Mendoza por Mí" className="h-8 object-contain shrink-0" />
+                        <div>
+                          <strong className="block text-mendoza-blue-dark">Mendoza x Mí</strong>
+                          <span className="text-sm">Gestión de turnos online</span>
+                        </div>
+                      </div>
+                      <div className="bg-white rounded-lg p-4 text-slate-800 flex items-center gap-4 shadow-sm">
+                        <div className="bg-pink-100 text-pink-600 rounded-full p-3 shrink-0">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <strong className="block text-mendoza-blue-dark">Llamando al 148</strong>
+                          <span className="text-sm">Opción 6</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white/10 rounded-xl p-5 border border-white/20">
+                    <h4 className="text-xl font-bold text-mendoza-gold mb-3 flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                      </svg>
+                      Postas Sanitarias
+                    </h4>
+                    <p className="text-lg font-semibold flex items-center gap-2">
+                      <span className="text-amber-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                      </span>
+                      Para solicitar turno debe realizarlo de manera presencial.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </details>
           </div>
         </div>
       </section>
