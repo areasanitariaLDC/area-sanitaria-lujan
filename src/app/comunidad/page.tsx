@@ -45,7 +45,7 @@ export default function ComunidadPage() {
               className="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-mendoza-blue-dark bg-mendoza-gold hover:bg-mendoza-gold/90 rounded-lg transition-colors shadow-lg"
             >
               Ver accesos rápidos
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewB°ox="0 0 20 20" fill="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </a>
@@ -109,7 +109,7 @@ export default function ComunidadPage() {
               <summary className="flex cursor-pointer items-center justify-between p-6 text-white font-bold text-xl">
                 Vacunación
                 <span className="flex-shrink-0 ml-4 bg-white text-mendoza-blue-dark rounded-full w-8 h-8 flex items-center justify-center group-open:-rotate-45 transition-transform duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewB°ox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
                   </svg>
                 </span>
@@ -131,13 +131,13 @@ export default function ComunidadPage() {
                     <tbody className="divide-y divide-slate-100">
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="px-4 py-3 font-semibold">Centro de Salud 3</td>
-                        <td className="px-4 py-3">B°° Supe, Ingeniero Krause y Cutral-Co Luján</td>
+                        <td className="px-4 py-3">B° Supe, Ingeniero Krause y Cutral-Co Luján</td>
                         <td className="px-4 py-3">Carrodilla</td>
                         <td className="px-4 py-3">Lunes, miércoles y viernes 8 a 17.30<br/>Martes y jueves de 8 a 13.30<br/>Sábados de 8 a 11.30</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="px-4 py-3 font-semibold">Centro de Salud 202</td>
-                        <td className="px-4 py-3">B°° Solar de Cuyo M J – C 35</td>
+                        <td className="px-4 py-3">B° Solar de Cuyo M J – C 35</td>
                         <td className="px-4 py-3">Perdriel</td>
                         <td className="px-4 py-3">Lunes a viernes de 8 a 17.30<br/>Sábados 8 a 11.30</td>
                       </tr>
@@ -155,7 +155,7 @@ export default function ComunidadPage() {
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="px-4 py-3 font-semibold">Centro de Salud 224</td>
-                        <td className="px-4 py-3">B°º Costa Flores M-A C-13 Luján – Perdriel</td>
+                        <td className="px-4 py-3">B° Costa Flores M-A C-13 Luján – Perdriel</td>
                         <td className="px-4 py-3">Pedriel</td>
                         <td className="px-4 py-3">Lunes a viernes, de 8 a 13.30<br/>Sábados de 8 a 11.30</td>
                       </tr>
@@ -209,7 +209,7 @@ export default function ComunidadPage() {
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors">
                         <td className="px-4 py-3 font-semibold">Centro de Salud 39</td>
-                        <td className="px-4 py-3">Ruta 40, km 38 B°° Cuadro Estación</td>
+                        <td className="px-4 py-3">Ruta 40, km 38 B° Cuadro Estación</td>
                         <td className="px-4 py-3">Ugarteche</td>
                         <td className="px-4 py-3">Lunes a viernes, de 8 a 18<br/>Sábados 8 a 12</td>
                       </tr>
@@ -230,7 +230,7 @@ export default function ComunidadPage() {
               <summary className="flex cursor-pointer items-center justify-between p-6 text-white font-bold text-xl">
                 Campañas de prevención
                 <span className="flex-shrink-0 ml-4 bg-white text-mendoza-blue-dark rounded-full w-8 h-8 flex items-center justify-center group-open:-rotate-45 transition-transform duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewB°ox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />
                   </svg>
                 </span>
@@ -238,16 +238,16 @@ export default function ComunidadPage() {
               <div className="px-6 pb-6 text-slate-800 bg-slate-50 border-t border-white/10 mt-2 pt-6">
                 
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  {/* B°ronquiolitis Card */}
+                  {/* Bronquiolitis Card */}
                   <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col transition-transform hover:-translate-y-1">
-                    <img src="/campana-bronquiolitis.png" alt="Campaña B°ronquiolitis" className="w-full h-auto object-cover" />
+                    <img src="/campana-bronquiolitis.png" alt="Campaña Bronquiolitis" className="w-full h-auto object-cover" />
                   </div>
                   
                   {/* HPV Card */}
                   <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col transition-transform hover:-translate-y-1 relative group/hpv">
                     <img src="/campana-hpv.png" alt="Campaña Cáncer de Cuello de Útero" className="w-full h-auto object-cover" />
                     
-                    {/* B°anner inferior clickeable */}
+                    {/* Banner inferior clickeable */}
                     <div 
                       onClick={() => setIsHpvModalOpen(true)}
                       className="absolute bottom-0 inset-x-0 bg-[#d81b60] text-white p-3 text-center cursor-pointer hover:bg-pink-700 transition-colors shadow-[0_-4px_10px_rgba(0,0,0,0.2)]"
@@ -282,7 +282,7 @@ export default function ComunidadPage() {
                 onClick={() => setIsHpvModalOpen(false)}
                 className="w-8 h-8 flex-shrink-0 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-full flex items-center justify-center transition-colors"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewB°ox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </button>
@@ -291,7 +291,7 @@ export default function ComunidadPage() {
               <div className="bg-white rounded-2xl p-4 md:p-6 text-slate-800">
                   <div className="flex items-center gap-4 mb-6 border-b border-slate-100 pb-4">
                     <div className="bg-pink-600 text-white p-3 rounded-full">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewB°ox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                       </svg>
                     </div>
@@ -332,9 +332,9 @@ export default function ComunidadPage() {
                         <p className="text-sm m-0">Para obtener orientación e información adicional:</p>
                       </div>
                       <div className="flex flex-col gap-2 text-sm font-bold">
-                        <span className="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewB°ox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg> Línea 148, opción 6 "Salud"</span>
-                        <a href="mailto:preventivosmendoza@mendoza.gov.ar" className="flex items-center gap-2 text-mendoza-blue-light hover:underline"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewB°ox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg> preventivosmendoza@mendoza.gov.ar</a>
-                        <a href="https://casadelamujer.mendoza.gov.ar/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-pink-600 hover:underline"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewB°ox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg> Acceso a Casa de la Mujer</a>
+                        <span className="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg> Línea 148, opción 6 "Salud"</span>
+                        <a href="mailto:preventivosmendoza@mendoza.gov.ar" className="flex items-center gap-2 text-mendoza-blue-light hover:underline"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg> preventivosmendoza@mendoza.gov.ar</a>
+                        <a href="https://casadelamujer.mendoza.gov.ar/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-pink-600 hover:underline"><svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg> Acceso a Casa de la Mujer</a>
                       </div>
                     </div>
                   </div>
@@ -352,17 +352,17 @@ export default function ComunidadPage() {
                       <tbody className="divide-y divide-slate-100">
                         <tr className="hover:bg-slate-50">
                           <td className="px-4 py-3 font-semibold">CAPS Nº 03 Pablo Casale</td>
-                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/fped3yP9Psxq6jB°EA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">B°° Supe, Ingeniero Krause y Cutral-Co Luján</a></td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/fped3yP9Psxq6jBEA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">B° Supe, Ingeniero Krause y Cutral-Co Luján</a></td>
                           <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
-                          <td className="px-4 py-3 font-semibold">CAPS Nº 31 David B°usana</td>
+                          <td className="px-4 py-3 font-semibold">CAPS Nº 31 David Busana</td>
                           <td className="px-4 py-3"><a href="https://maps.app.goo.gl/D3DbcWSruTK9Z2AV7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Federico Serpa y Republica del Libano</a></td>
                           <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
                           <td className="px-4 py-3 font-semibold">CAPS Nº 32 Las Compuertas</td>
-                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/kanEt8nDB°5PZRGR77" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Saenz Peña 8801</a></td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/kanEt8nDB5PZRGR77" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Saenz Peña 8801</a></td>
                           <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
@@ -397,12 +397,12 @@ export default function ComunidadPage() {
                         </tr>
                         <tr className="hover:bg-slate-50">
                           <td className="px-4 py-3 font-semibold">CAPS Nº 39 Ugarteche</td>
-                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/wxhi6vFH7Cdqe3qy7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Ruta 40, km 38 B°° Cuadro Estación</a></td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/wxhi6vFH7Cdqe3qy7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Ruta 40, km 38 B° Cuadro Estación</a></td>
                           <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
                           <td className="px-4 py-3 font-semibold">CAPS Nº 202 Perdriel</td>
-                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/T8ZxV1S176JYuMdSA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">B°° Solar de Cuyo M J – C 35</a></td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/T8ZxV1S176JYuMdSA" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">B° Solar de Cuyo M J – C 35</a></td>
                           <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
@@ -417,7 +417,7 @@ export default function ComunidadPage() {
                         </tr>
                         <tr className="hover:bg-slate-50">
                           <td className="px-4 py-3 font-semibold">CAPS Nº 224 Costa Flores</td>
-                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/qAe1WGVUDC7vPDR59" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">B°º Costa Flores M-A C-13 Luján – Perdriel</a></td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/qAe1WGVUDC7vPDR59" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">B° Costa Flores M-A C-13 Luján – Perdriel</a></td>
                           <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
@@ -426,7 +426,7 @@ export default function ComunidadPage() {
                           <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
-                          <td className="px-4 py-3 font-semibold">POSTA SANITARIA Nº 525 B°ella Vista</td>
+                          <td className="px-4 py-3 font-semibold">POSTA SANITARIA Nº 525 Bella Vista</td>
                           <td className="px-4 py-3"><a href="https://maps.app.goo.gl/F7sbn7cHffFUNFb6A" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Luján de Cuyo</a></td>
                           <td className="px-4 py-3">Lunes a viernes, de 8 a 13hs</td>
                         </tr>
@@ -439,8 +439,8 @@ export default function ComunidadPage() {
                           <td className="px-4 py-3">-</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
-                          <td className="px-4 py-3 font-semibold">Innovis Laboratorio B°ioquímico Integral</td>
-                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/rZegdvdhzGDKfjB°D7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Viamonte 5263 Chacras de Coria, Luján de Cuyo</a></td>
+                          <td className="px-4 py-3 font-semibold">Innovis Laboratorio Bioquímico Integral</td>
+                          <td className="px-4 py-3"><a href="https://maps.app.goo.gl/rZegdvdhzGDKfjBD7" target="_blank" rel="noopener noreferrer" className="text-mendoza-blue-light hover:underline">Viamonte 5263 Chacras de Coria, Luján de Cuyo</a></td>
                           <td className="px-4 py-3">Lunes a viernes de 7 a 13 / 14 a 19hs.</td>
                         </tr>
                         <tr className="hover:bg-slate-50">
