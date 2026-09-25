@@ -64,13 +64,13 @@ export default function Header() {
                 >
                   Centros de Salud
                 </a>
-                <a 
-                  href="#comunidad" 
+                <Link 
+                  href="/comunidad" 
                   onClick={() => setIsMenuOpen(false)}
                   className="px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-mendoza-blue-light transition-colors"
                 >
                   Comunidad
-                </a>
+                </Link>
                 <a 
                   href="#equipos" 
                   onClick={() => setIsMenuOpen(false)}
