@@ -185,7 +185,7 @@ export default function Centers({ selectedCenterIndex, setSelectedCenterIndex }:
           </p>
           
           <div className="max-w-6xl mx-auto text-left">
-            {renderCategoryBlock("Hospitales Provinciales", "Hospital", hospitales)}
+            {renderCategoryBlock("Hospitales y Consultorios Externos", "Hospital", hospitales)}
             {renderCategoryBlock("Centros de Salud (CAPS)", "Centro de Salud", centrosSalud)}
             {renderCategoryBlock("Postas Sanitarias", "Posta Sanitaria", postas)}
           </div>

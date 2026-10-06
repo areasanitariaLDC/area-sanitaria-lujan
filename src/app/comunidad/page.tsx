@@ -315,7 +315,7 @@ export default function ComunidadPage() {
                       </svg>
                       Centros de Salud y Hospitales
                     </h4>
-                    <p className="mb-4">Para Centros de Salud (CAPS) y Hospitales Provinciales, la solicitud de turnos se realiza a través de las siguientes vías:</p>
+                    <p className="mb-4">Para Centros de Salud (CAPS) y Hospitales, la solicitud de turnos se realiza a través de las siguientes vías:</p>
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div className="bg-white rounded-lg p-4 text-slate-800 flex items-center gap-4 shadow-sm">
                         <img src="/mxm.png" alt="Mendoza por Mí" className="h-8 object-contain shrink-0" />
