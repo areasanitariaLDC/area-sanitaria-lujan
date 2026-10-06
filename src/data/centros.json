@@ -166,5 +166,13 @@
     "lat": -33.05500724567212,
     "lng": -68.87140346236576,
     "address": "Acceso Sur, Luján de Cuyo, Mendoza"
+  },
+  {
+    "name": "Posta Sanitaria N° 521 \"Cacheuta\"",
+    "type": "Posta Sanitaria",
+    "description": "Posta Cacheuta Norte",
+    "address": "Camping EDEMSA, Cacheuta, Luján de Cuyo, Mendoza",
+    "lat": -33.0158455,
+    "lng": -69.1175068
   }
 ]
